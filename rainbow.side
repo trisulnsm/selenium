@@ -7690,7 +7690,7 @@
       ],
       "value": "user"
     }, {
-      "id": "717f3fcb-6889-4936-891a-bd32b59cc359",
+      "id": "fd33da43-4c68-4659-9dcf-eb3542602201",
       "comment": "",
       "command": "sendKeys",
       "target": "id=user_password",
@@ -7704,55 +7704,86 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
-      "id": "8dd0f6da-3132-4c81-8357-3597569632a3",
+      "id": "39d40d5e-1176-4004-a0bd-0b02c5f28a93",
       "comment": "",
       "command": "click",
-      "target": "xpath=//a[contains(text(),'Show all')]",
+      "target": "xpath=//li[12]/a",
+      "targets": [
+        ["linkText=Show all", "linkText"],
+        ["css=#sub_ul_1 > li:nth-child(12) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Show all')]", "xpath:link"],
+        ["xpath=//ul[@id='sub_ul_1']/li[12]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/toplevel_menu/dashboards?mid=1%2C0')]", "xpath:href"],
+        ["xpath=//li[12]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show all')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "395b23a5-6de0-4351-b829-f51503fc3f33",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[24]/div/h4/a",
+      "targets": [
+        ["linkText=Peering Analytics", "linkText"],
+        ["css=.col-xs-3:nth-child(24) h4 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Peering Analytics')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/div/div[24]/div/h4/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/newdash?dash_key=gitPeeringAnalytics98119')]", "xpath:href"],
+        ["xpath=//div[24]/div/h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Peering Analytics')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50896d57-ecb5-4259-b855-0708a736e6db",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
       "targets": [],
       "value": ""
     }, {
-      "id": "7685e866-4e39-4c61-9564-0d04c3185359",
+      "id": "7a1c6aa7-0325-4b68-8e87-ac070a63b9ad",
       "comment": "",
       "command": "click",
-      "target": "xpath=//a[contains(text(),'CIDR Explore Flows')]",
+      "target": "xpath=//div[2]/div/div/div/select",
       "targets": [
-        ["linkText=CIDR Explore Flows", "linkText"],
-        ["css=.col-xs-3:nth-child(17) h4 > a", "css:finder"],
-        ["xpath=//a[contains(text(),'CIDR Explore Flows')]", "xpath:link"],
-        ["xpath=//div[@id='sq_content']/div[3]/div[2]/div/div[17]/div/h4/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/newdash?dash_key=gitCIDRExploreFlows40420')]", "xpath:href"],
-        ["xpath=//div[17]/div/h4/a", "xpath:position"],
-        ["xpath=//a[contains(.,'CIDR Explore Flows')]", "xpath:innerText"]
+        ["id=routers", "id"],
+        ["name=routers", "name"],
+        ["css=#routers", "css:finder"],
+        ["xpath=//select[@id='routers']", "xpath:attributes"],
+        ["xpath=//div[@id='trp_data_16778']/div/div/div/div[2]/form/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/select", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "4be06fad-2989-4bb9-a830-3da9cb871a6d",
+      "id": "a1fd4945-93ff-4698-8b6a-1e7b2ac5a003",
       "comment": "",
       "command": "click",
-      "target": "xpath=//form/div/div/div/div/input",
+      "target": "xpath=//div[2]/div/div/div/select",
       "targets": [
-        ["id=cidr_subnet", "id"],
-        ["css=#cidr_subnet", "css:finder"],
-        ["xpath=//input[@id='cidr_subnet']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_43131']/div/div/div/div[2]/form/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+        ["id=routers", "id"],
+        ["name=routers", "name"],
+        ["css=#routers", "css:finder"],
+        ["xpath=//select[@id='routers']", "xpath:attributes"],
+        ["xpath=//div[@id='trp_data_16778']/div/div/div/div[2]/form/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/select", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "98522e19-7d3f-4425-9c97-0353596132e0",
+      "id": "84e218d2-b40c-47cb-9d30-cb89687bc525",
       "comment": "",
-      "command": "type",
-      "target": "xpath=//form/div/div/div/div/input",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/select",
       "targets": [
-        ["id=cidr_subnet", "id"],
-        ["css=#cidr_subnet", "css:finder"],
-        ["xpath=//input[@id='cidr_subnet']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_43131']/div/div/div/div[2]/form/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+        ["id=interfaces", "id"],
+        ["name=interfaces", "name"],
+        ["css=#interfaces", "css:finder"],
+        ["xpath=//select[@id='interfaces']", "xpath:attributes"],
+        ["xpath=//div[@id='trp_data_16778']/div/div/div/div[2]/form/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
       ],
-      "value": "103.225.124.0/27"
+      "value": ""
     }, {
-      "id": "e6a40326-ccb7-4524-bb2c-a00921671ad0",
+      "id": "b8c88c82-083f-420b-8bae-5bef40b433ef",
       "comment": "",
       "command": "click",
       "target": "xpath=//input[3]",
@@ -7761,460 +7792,434 @@
         ["name=commit", "name"],
         ["css=#btn_submit", "css:finder"],
         ["xpath=//input[@id='btn_submit']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_43131']/div/div/div/div[2]/form/div[2]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//div[@id='trp_data_16778']/div/div/div/div[2]/form/div[3]/div/input[3]", "xpath:idRelative"],
         ["xpath=//input[3]", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "d17457cf-c583-4e35-b6b3-8b9e461af108",
-      "comment": "",
-      "command": "pause",
-      "target": "2000",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "e7176e74-32c2-4834-8038-97357cda8dba",
-      "comment": "",
-      "command": "verifyTitle",
-      "target": "Trisul Network Analytics",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "5b5b2fc2-ecf7-4295-b4d7-b1a7715fd2aa",
+      "id": "ee445986-0fcc-4c2d-aac7-09694b0da585",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#source_port h4",
+      "target": "xpath=//td[3]",
       "targets": [
-        ["css=#source_port h4", "css:finder"],
-        ["xpath=//div[@id='source_port']/div/div/div/h4", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div/div/div/h4", "xpath:position"],
-        ["xpath=//h4[contains(.,'Aggregated by Source Port (44)')]", "xpath:innerText"]
+        ["css=#table_0 tr:nth-child(1) > td:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='table_0']/tbody/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'GOOGLE,US')]", "xpath:innerText"]
       ],
-      "value": "Aggregated by Source Port (44)"
+      "value": "GOOGLE,US"
     }, {
-      "id": "649d6bd2-4e3d-4c95-8bcc-f3f56385ef80",
+      "id": "9de7c209-f053-4597-a9ae-82a722789eda",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#agg_source_port_tbl tr:nth-child(1) > td:nth-child(4)",
+      "target": "xpath=//td/a",
       "targets": [
-        ["css=#agg_source_port_tbl tr:nth-child(1) > td:nth-child(4)", "css:finder"],
-        ["xpath=//table[@id='agg_source_port_tbl']/tbody/tr/td[4]", "xpath:idRelative"],
-        ["xpath=//td[4]", "xpath:position"],
-        ["xpath=//td[contains(.,'29.55 M')]", "xpath:innerText"]
-      ],
-      "value": "29.55 M"
-    }, {
-      "id": "c8127927-1c97-4808-8e17-f853326340ba",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=#agg_source_port_tbl tr:nth-child(2) > td:nth-child(4)",
-      "targets": [
-        ["css=#agg_source_port_tbl tr:nth-child(2) > td:nth-child(4)", "css:finder"],
-        ["xpath=//table[@id='agg_source_port_tbl']/tbody/tr[2]/td[4]", "xpath:idRelative"],
-        ["xpath=//tr[2]/td[4]", "xpath:position"],
-        ["xpath=//td[contains(.,'20.04 M')]", "xpath:innerText"]
-      ],
-      "value": "20.04 M"
-    }, {
-      "id": "169b75a7-1afd-4ed0-997a-516f46d99738",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=#explore_flows_tbl th:nth-child(2)",
-      "targets": [
-        ["css=#explore_flows_tbl th:nth-child(2)", "css:finder"],
-        ["xpath=//table[@id='explore_flows_tbl']/thead/tr/th[2]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[2]/table/thead/tr/th[2]", "xpath:position"],
-        ["xpath=//th[contains(.,'IP')]", "xpath:innerText"]
-      ],
-      "value": "IP"
-    }, {
-      "id": "58fa8e6f-ced4-439d-b589-14e9822ded85",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=UDP",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
+        ["linkText=15169", "linkText"],
+        ["css=#table_0 tr:nth-child(1) > .linkdrill:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'15169')]", "xpath:link"],
+        ["xpath=//table[@id='table_0']/tbody/tr/td/a", "xpath:idRelative"],
         ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'15169')]", "xpath:innerText"]
       ],
-      "value": "UDP"
+      "value": "15169"
     }, {
-      "id": "d28c07bb-1c25-4879-8bd5-1b2fe4e4538c",
+      "id": "18ff88d3-df15-4d17-94c5-42990b1cd8ff",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[5]",
+      "targets": [
+        ["css=#table_0 tr:nth-child(1) > td:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='table_0']/tbody/tr/td[5]", "xpath:idRelative"],
+        ["xpath=//td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'1.64 Gbps')]", "xpath:innerText"]
+      ],
+      "value": "1.64 Gbps"
+    }, {
+      "id": "399f0466-09aa-473d-8122-aa46995909e4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[7]",
+      "targets": [
+        ["css=#table_0 tr:nth-child(1) > td:nth-child(7)", "css:finder"],
+        ["xpath=//table[@id='table_0']/tbody/tr/td[7]", "xpath:idRelative"],
+        ["xpath=//td[7]", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "841937f1-7e06-455c-bc15-1af5dfb6c312",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//tr[2]/td[2]/a",
+      "targets": [
+        ["linkText=BBIL-AP", "linkText"],
+        ["css=#table_0 tr:nth-child(2) > .linkdrill:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'BBIL-AP')]", "xpath:link"],
+        ["xpath=//table[@id='table_0']/tbody/tr[2]/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[32]", "xpath:href"],
+        ["xpath=//tr[2]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BBIL-AP')]", "xpath:innerText"]
+      ],
+      "value": "BBIL-AP"
+    }, {
+      "id": "8019b7a6-0f9a-4349-918b-1fd7f85d8ee8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//tr[2]/td/a",
+      "targets": [
+        ["linkText=9498", "linkText"],
+        ["css=#table_0 tr:nth-child(2) > .linkdrill:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'9498')]", "xpath:link"],
+        ["xpath=//table[@id='table_0']/tbody/tr[2]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[31]", "xpath:href"],
+        ["xpath=//tr[2]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'9498')]", "xpath:innerText"]
+      ],
+      "value": "9498"
+    }, {
+      "id": "183cdbd8-ba49-4d32-af3c-28599e3e6230",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//tr[2]/td[3]",
+      "targets": [
+        ["css=#table_0 tr:nth-child(2) > td:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='table_0']/tbody/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'BHARTI Airtel Ltd.,IN')]", "xpath:innerText"]
+      ],
+      "value": "BHARTI Airtel Ltd.,IN"
+    }, {
+      "id": "48190b63-0762-4319-bd32-357fb4531879",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//tr[2]/td[5]",
+      "targets": [
+        ["css=#table_0 tr:nth-child(2) > td:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='table_0']/tbody/tr[2]/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'1.35 Gbps')]", "xpath:innerText"]
+      ],
+      "value": "1.35 Gbps"
+    }, {
+      "id": "2ed87514-0190-4c7c-89fe-b25936fc021f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//tr[2]/td[7]",
+      "targets": [
+        ["css=#table_0 tr:nth-child(2) > td:nth-child(7)", "css:finder"],
+        ["xpath=//table[@id='table_0']/tbody/tr[2]/td[7]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[7]", "xpath:position"],
+        ["xpath=//td[contains(.,'37')]", "xpath:innerText"]
+      ],
+      "value": "37"
+    }, {
+      "id": "718e7708-6fba-463a-a854-05c294cb06b7",
       "comment": "",
       "command": "click",
-      "target": "linkText=Dest Port (9)",
+      "target": "xpath=//div[3]/div/div[2]/div/div/ul/li[2]/a",
       "targets": [
-        ["linkText=Dest Port (9)", "linkText"],
-        ["css=#agg_tabs > li:nth-child(2) > a", "css:finder"],
-        ["xpath=//ul[@id='agg_tabs']/li[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#dest_port')]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Dest Port (9)')]", "xpath:innerText"]
+        ["linkText=Transmit to Upstream (673.68 G)", "linkText"],
+        ["css=#isp_overview_tabs > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//ul[@id='isp_overview_tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#isp_overview_1')]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Transmit to Upstream (673.68 G)')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "f3ddbac5-65b2-407c-bbfb-1880e174fdd3",
+      "id": "0af74d3d-f974-4258-9455-9faefca50e32",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#dest_port h4",
+      "target": "xpath=//div[2]/div/div/div/div[2]/div/table/tbody/tr/td/a",
       "targets": [
-        ["css=#dest_port h4", "css:finder"],
-        ["xpath=//div[@id='dest_port']/div/div/div/h4", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div[2]/div/div/div/h4", "xpath:position"],
-        ["xpath=//h4[contains(.,'Aggregated by Dest Port (9)')]", "xpath:innerText"]
+        ["linkText=15169", "linkText"],
+        ["css=#table_1 tr:nth-child(1) > .linkdrill:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'15169')])[2]", "xpath:link"],
+        ["xpath=//table[@id='table_1']/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[130]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/table/tbody/tr/td/a", "xpath:position"]
       ],
-      "value": "Aggregated by Dest Port (9)"
+      "value": "15169"
     }, {
-      "id": "93c72989-10ec-4563-ab8f-8b38f66b2d01",
-      "comment": "",
-      "command": "verifyTitle",
-      "target": "Trisul Network Analytics",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "41a1e85c-490c-4585-8999-1d425c228a2f",
+      "id": "2e4427e7-1437-461e-90f1-6f24431330be",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#agg_dest_port_tbl tr:nth-child(1) > td:nth-child(4)",
+      "target": "xpath=//div[2]/div/div/div/div[2]/div/table/tbody/tr/td[2]/a",
       "targets": [
-        ["css=#agg_dest_port_tbl tr:nth-child(1) > td:nth-child(4)", "css:finder"],
-        ["xpath=//table[@id='agg_dest_port_tbl']/tbody/tr/td[4]", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div[2]/table/tbody/tr/td[4]", "xpath:position"],
-        ["xpath=//td[contains(.,'49.59 M')]", "xpath:innerText"]
+        ["linkText=GOOGLE", "linkText"],
+        ["css=#table_1 tr:nth-child(1) > .linkdrill:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'GOOGLE')])[2]", "xpath:link"],
+        ["xpath=//table[@id='table_1']/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[131]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/table/tbody/tr/td[2]/a", "xpath:position"]
       ],
-      "value": "49.59 M"
+      "value": "GOOGLE"
     }, {
-      "id": "c5f921ef-a15c-4904-822b-d43d69f150b7",
+      "id": "73f5fcb3-73be-428d-98c0-9091ae9a5c4a",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#agg_dest_port_tbl tr:nth-child(2) > td:nth-child(4)",
+      "target": "xpath=//div[2]/div/div/div/div[2]/div/table/tbody/tr/td[3]",
       "targets": [
-        ["css=#agg_dest_port_tbl tr:nth-child(2) > td:nth-child(4)", "css:finder"],
-        ["xpath=//table[@id='agg_dest_port_tbl']/tbody/tr[2]/td[4]", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div[2]/table/tbody/tr[2]/td[4]", "xpath:position"],
-        ["xpath=//td[contains(.,'5.42 M')]", "xpath:innerText"]
+        ["css=#table_1 tr:nth-child(1) > td:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='table_1']/tbody/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/table/tbody/tr/td[3]", "xpath:position"]
       ],
-      "value": "5.42 M"
+      "value": "GOOGLE,US"
     }, {
-      "id": "09ab3531-8c09-4cf8-a570-6052279d128f",
+      "id": "35f39128-9b08-4bf6-84e7-d1cefc0ccfe1",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#explore_flows_tbl th:nth-child(3)",
+      "target": "xpath=//div[2]/div/div/div/div[2]/div/table/tbody/tr/td[5]",
       "targets": [
-        ["css=#explore_flows_tbl th:nth-child(3)", "css:finder"],
-        ["xpath=//table[@id='explore_flows_tbl']/thead/tr/th[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[2]/table/thead/tr/th[3]", "xpath:position"],
-        ["xpath=//th[contains(.,'Port')]", "xpath:innerText"]
+        ["css=#table_1 tr:nth-child(1) > td:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='table_1']/tbody/tr/td[5]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/table/tbody/tr/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'421.13 Mbps')]", "xpath:innerText"]
       ],
-      "value": "Port"
+      "value": "421.13 Mbps"
     }, {
-      "id": "194f1fb2-ade9-4e52-a8a5-24ea2fef8195",
+      "id": "3e9e8658-9fda-4498-a84c-dece508e6ed5",
       "comment": "",
       "command": "verifyText",
-      "target": "linkText=UDP",
+      "target": "xpath=//div[2]/div/div/div/div[2]/div/table/tbody/tr/td[7]",
       "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
+        ["css=#table_1 tr:nth-child(1) > td:nth-child(7)", "css:finder"],
+        ["xpath=//table[@id='table_1']/tbody/tr/td[7]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/table/tbody/tr/td[7]", "xpath:position"]
       ],
-      "value": "UDP"
+      "value": "3"
     }, {
-      "id": "b45e83ba-937e-43cc-96ba-04b33d9c6921",
+      "id": "32ea1655-f18d-463e-b739-ff55fca45f45",
       "comment": "",
       "command": "click",
-      "target": "linkText=Source Ip (15)",
+      "target": "xpath=//div/ul/li[3]/a/span",
       "targets": [
-        ["linkText=Source Ip (15)", "linkText"],
-        ["css=#agg_tabs > li:nth-child(3) > a", "css:finder"],
-        ["xpath=//ul[@id='agg_tabs']/li[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#source_ip')]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Source Ip (15)')]", "xpath:innerText"]
+        ["css=.volume_2", "css:finder"],
+        ["xpath=//ul[@id='isp_overview_tabs']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//div/ul/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,' (676.68 G)')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "6912a495-cdd7-4747-8966-2821549929bf",
+      "id": "78f73170-67c4-49d9-a7d6-ed9706fdbde4",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#agg_source_ip_tbl th:nth-child(1)",
+      "target": "xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td/a",
       "targets": [
-        ["css=#agg_source_ip_tbl th:nth-child(1)", "css:finder"],
-        ["xpath=//table[@id='agg_source_ip_tbl']/thead/tr/th", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div[2]/table/thead/tr/th", "xpath:position"]
+        ["linkText=58898", "linkText"],
+        ["css=#table_2 tr:nth-child(1) > .linkdrill:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'58898')]", "xpath:link"],
+        ["xpath=//table[@id='table_2']/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[240]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'58898')]", "xpath:innerText"]
       ],
-      "value": "Item"
+      "value": "58898"
     }, {
-      "id": "61611210-3883-44a7-a6d6-7d6eeb8846cb",
+      "id": "1adb10c9-d320-4afe-ac53-30a14ee5458d",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#agg_source_ip_tbl tr:nth-child(1) > td:nth-child(4)",
+      "target": "xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td[2]/a",
       "targets": [
-        ["css=#agg_source_ip_tbl tr:nth-child(1) > td:nth-child(4)", "css:finder"],
-        ["xpath=//table[@id='agg_source_ip_tbl']/tbody/tr/td[4]", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div[2]/table/tbody/tr/td[4]", "xpath:position"],
-        ["xpath=//td[contains(.,'32.17 M')]", "xpath:innerText"]
+        ["linkText=RAINBOWISP-AS", "linkText"],
+        ["css=#table_2 tr:nth-child(1) > .linkdrill:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'RAINBOWISP-AS')]", "xpath:link"],
+        ["xpath=//table[@id='table_2']/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[241]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'RAINBOWISP-AS')]", "xpath:innerText"]
       ],
-      "value": "32.17 M"
+      "value": "RAINBOWISP-AS"
     }, {
-      "id": "70edb904-264c-4523-a1bc-f087ce3b8ba9",
+      "id": "7847645e-234c-4b68-a932-151f5f67e2ce",
       "comment": "",
       "command": "verifyText",
-      "target": "linkText=UDP",
+      "target": "xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td[3]",
       "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
+        ["css=#table_2 tr:nth-child(1) > td:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='table_2']/tbody/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'Rainbow communications India Pvt Ltd,IN')]", "xpath:innerText"]
       ],
-      "value": "UDP"
+      "value": "Rainbow communications India Pvt Ltd,IN"
     }, {
-      "id": "7aa5b929-7aa7-4797-b9ee-2034b3825cbc",
+      "id": "b291e9d5-cb76-4f60-8672-d0eeacdbf8b8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td[5]",
+      "targets": [
+        ["css=#table_2 tr:nth-child(1) > td:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='table_2']/tbody/tr/td[5]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'1.52 Gbps')]", "xpath:innerText"]
+      ],
+      "value": "1.52 Gbps"
+    }, {
+      "id": "98680735-39db-415e-b0e0-06cc3ab71c4e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td[6]",
+      "targets": [
+        ["css=#table_2 tr:nth-child(1) > td:nth-child(6)", "css:finder"],
+        ["xpath=//table[@id='table_2']/tbody/tr/td[6]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td[6]", "xpath:position"],
+        ["xpath=//td[contains(.,'2023')]", "xpath:innerText"]
+      ],
+      "value": "2023"
+    }, {
+      "id": "f4474622-a81b-4f4f-9a8b-c95bb6e101bf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td[7]",
+      "targets": [
+        ["css=#table_2 tr:nth-child(1) > td:nth-child(7)", "css:finder"],
+        ["xpath=//table[@id='table_2']/tbody/tr/td[7]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr/td[7]", "xpath:position"],
+        ["xpath=//td[contains(.,'6446')]", "xpath:innerText"]
+      ],
+      "value": "6446"
+    }, {
+      "id": "a5e1209a-9687-4662-bc74-73aee61e3595",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=137620",
+      "targets": [
+        ["linkText=137620", "linkText"],
+        ["css=#table_2 tr:nth-child(2) > .linkdrill:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'137620')]", "xpath:link"],
+        ["xpath=//table[@id='table_2']/tbody/tr[2]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[251]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr[2]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'137620')]", "xpath:innerText"]
+      ],
+      "value": "137620"
+    }, {
+      "id": "8706dde7-6daa-4567-b6f3-b55180c35ab3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr[2]/td[2]/a",
+      "targets": [
+        ["linkText=PINKBRO-AS-IN", "linkText"],
+        ["css=#table_2 tr:nth-child(2) > .linkdrill:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'PINKBRO-AS-IN')]", "xpath:link"],
+        ["xpath=//table[@id='table_2']/tbody/tr[2]/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[252]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr[2]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PINKBRO-AS-IN')]", "xpath:innerText"]
+      ],
+      "value": "PINKBRO-AS-IN"
+    }, {
+      "id": "d1bf752b-19b4-4412-8a3a-11f066a12e2b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr[2]/td[3]",
+      "targets": [
+        ["css=#table_2 tr:nth-child(2) > td:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='table_2']/tbody/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'Pink Broadband Service Pvt Ltd,IN')]", "xpath:innerText"]
+      ],
+      "value": "Pink Broadband Service Pvt Ltd,IN"
+    }, {
+      "id": "31204964-3b20-4864-8480-91ec26bb099f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr[2]/td[5]",
+      "targets": [
+        ["css=#table_2 tr:nth-child(2) > td:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='table_2']/tbody/tr[2]/td[5]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr[2]/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'171.60 Mbps')]", "xpath:innerText"]
+      ],
+      "value": "171.60 Mbps"
+    }, {
+      "id": "a905bec8-fc7c-42be-b850-104997a56e85",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr[2]/td[7]",
+      "targets": [
+        ["css=#table_2 tr:nth-child(2) > td:nth-child(7)", "css:finder"],
+        ["xpath=//table[@id='table_2']/tbody/tr[2]/td[7]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/table/tbody/tr[2]/td[7]", "xpath:position"],
+        ["xpath=//td[contains(.,'720')]", "xpath:innerText"]
+      ],
+      "value": "720"
+    }, {
+      "id": "ba073cec-56de-4b0a-a907-f55e7deec534",
       "comment": "",
       "command": "click",
-      "target": "linkText=Dest Ip (3)",
+      "target": "xpath=//div/ul/li[4]/a",
       "targets": [
-        ["linkText=Dest Ip (3)", "linkText"],
-        ["css=#agg_tabs > li:nth-child(4) > a", "css:finder"],
-        ["xpath=//ul[@id='agg_tabs']/li[4]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#dest_ip')]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Dest Ip (3)')]", "xpath:innerText"]
+        ["linkText=Transmit to Downstream (2.71 T)", "linkText"],
+        ["css=#isp_overview_tabs > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//ul[@id='isp_overview_tabs']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#isp_overview_3')]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Transmit to Downstream (2.71 T)')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "7781055b-4176-4475-a66c-ee0dff740f11",
+      "id": "f8e75c05-2ec5-44b6-8a8f-9ecf901f28e4",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#agg_dest_ip_tbl tr:nth-child(1) > td:nth-child(4)",
+      "target": "xpath=//div[4]/div/div/div/div[2]/div/table/tbody/tr/td/a",
       "targets": [
-        ["css=#agg_dest_ip_tbl tr:nth-child(1) > td:nth-child(4)", "css:finder"],
-        ["xpath=//table[@id='agg_dest_ip_tbl']/tbody/tr/td[4]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div/div[2]/table/tbody/tr/td[4]", "xpath:position"],
-        ["xpath=//td[contains(.,'63.39 M')]", "xpath:innerText"]
+        ["linkText=58898", "linkText"],
+        ["css=#table_3 tr:nth-child(1) > .linkdrill:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'58898')])[2]", "xpath:link"],
+        ["xpath=//table[@id='table_3']/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[306]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div[2]/div/table/tbody/tr/td/a", "xpath:position"]
       ],
-      "value": "63.39 M"
+      "value": "58898"
     }, {
-      "id": "57127c42-7782-4e54-bb7b-d808d2b77379",
+      "id": "84f1c387-7a82-4e78-96d9-691aafe13c22",
       "comment": "",
       "command": "verifyText",
-      "target": "linkText=UDP",
+      "target": "xpath=//div[4]/div/div/div/div[2]/div/table/tbody/tr/td[2]/a",
       "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
+        ["linkText=RAINBOWISP-AS", "linkText"],
+        ["css=#table_3 tr:nth-child(1) > .linkdrill:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'RAINBOWISP-AS')])[2]", "xpath:link"],
+        ["xpath=//table[@id='table_3']/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[307]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div[2]/div/table/tbody/tr/td[2]/a", "xpath:position"]
       ],
-      "value": "UDP"
+      "value": "RAINBOWISP-AS"
     }, {
-      "id": "e33f1205-49d3-4f75-ae4a-9701a6a61f0a",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Internal Ip (4)",
-      "targets": [
-        ["linkText=Internal Ip (4)", "linkText"],
-        ["css=#agg_tabs > li:nth-child(5) > a", "css:finder"],
-        ["xpath=//ul[@id='agg_tabs']/li[5]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#internal_ip')]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[5]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Internal Ip (4)')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "53806ccd-96cf-4eec-87b2-f4694fff40b0",
+      "id": "3cc4c27f-fc05-4e0f-9248-103c3e354deb",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#agg_internal_ip_tbl tr:nth-child(1) > td:nth-child(4)",
+      "target": "xpath=//div[4]/div/div/div/div[2]/div/table/tbody/tr/td[3]",
       "targets": [
-        ["css=#agg_internal_ip_tbl tr:nth-child(1) > td:nth-child(4)", "css:finder"],
-        ["xpath=//table[@id='agg_internal_ip_tbl']/tbody/tr/td[4]", "xpath:idRelative"],
-        ["xpath=//div[5]/div/div/div[2]/table/tbody/tr/td[4]", "xpath:position"],
-        ["xpath=//td[contains(.,'66.42 M')]", "xpath:innerText"]
+        ["css=#table_3 tr:nth-child(1) > td:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='table_3']/tbody/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[2]/div/table/tbody/tr/td[3]", "xpath:position"]
       ],
-      "value": "66.42 M"
+      "value": "Rainbow communications India Pvt Ltd,IN"
     }, {
-      "id": "95313fa2-c786-4eb3-b3a2-910e45067e0b",
+      "id": "ad0d319c-da9e-47d3-8f33-708bd581c34e",
       "comment": "",
       "command": "verifyText",
-      "target": "css=#internal_ip h4",
+      "target": "xpath=//div[4]/div/div/div/div[2]/div/table/tbody/tr/td[5]",
       "targets": [
-        ["css=#internal_ip h4", "css:finder"],
-        ["xpath=//div[@id='internal_ip']/div/div/div/h4", "xpath:idRelative"],
-        ["xpath=//div[5]/div/div/div/h4", "xpath:position"],
-        ["xpath=//h4[contains(.,'Aggregated by Internal Ip (4)')]", "xpath:innerText"]
+        ["css=#table_3 tr:nth-child(1) > td:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='table_3']/tbody/tr/td[5]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[2]/div/table/tbody/tr/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'6.37 Gbps')]", "xpath:innerText"]
       ],
-      "value": "Aggregated by Internal Ip (4)"
+      "value": "6.37 Gbps"
     }, {
-      "id": "bed3f370-2f75-425b-b517-600d5d886160",
+      "id": "872f8794-477a-4da9-b0aa-296cebe3eaf9",
       "comment": "",
       "command": "verifyText",
-      "target": "linkText=UDP",
+      "target": "xpath=//div[4]/div/div/div/div[2]/div/table/tbody/tr/td[7]",
       "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
+        ["css=#table_3 tr:nth-child(1) > td:nth-child(7)", "css:finder"],
+        ["xpath=//table[@id='table_3']/tbody/tr/td[7]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[2]/div/table/tbody/tr/td[7]", "xpath:position"]
       ],
-      "value": "UDP"
-    }, {
-      "id": "997e3875-4bc0-4f27-85a2-70570144780e",
-      "comment": "",
-      "command": "click",
-      "target": "css=a > .external_ip_count",
-      "targets": [
-        ["css=a > .external_ip_count", "css:finder"],
-        ["xpath=//ul[@id='agg_tabs']/li[6]/a/span", "xpath:idRelative"],
-        ["xpath=//li[6]/a/span", "xpath:position"],
-        ["xpath=//span[contains(.,' (12)')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "6a1ec10d-9a24-45a9-b7b7-bb0ac0ee0291",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=#agg_external_ip_tbl tr:nth-child(1) > td:nth-child(4)",
-      "targets": [
-        ["css=#agg_external_ip_tbl tr:nth-child(1) > td:nth-child(4)", "css:finder"],
-        ["xpath=//table[@id='agg_external_ip_tbl']/tbody/tr/td[4]", "xpath:idRelative"],
-        ["xpath=//div[6]/div/div/div[2]/table/tbody/tr/td[4]", "xpath:position"]
-      ],
-      "value": "2.89 M"
-    }, {
-      "id": "6a3013dd-ce3b-4b10-b3af-c794b0022462",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=#external_ip h4",
-      "targets": [
-        ["css=#external_ip h4", "css:finder"],
-        ["xpath=//div[@id='external_ip']/div/div/div/h4", "xpath:idRelative"],
-        ["xpath=//div[6]/div/div/div/h4", "xpath:position"],
-        ["xpath=//h4[contains(.,'Aggregated by External Ip (12)')]", "xpath:innerText"]
-      ],
-      "value": "Aggregated by External Ip (12)"
-    }, {
-      "id": "7fd7c6a9-7290-465c-b89d-d47e2498eda2",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=UDP",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
-    }, {
-      "id": "ec17b624-ee27-4e2d-97fa-cde15e17feb1",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Internal Port (15)",
-      "targets": [
-        ["linkText=Internal Port (15)", "linkText"],
-        ["css=#agg_tabs > li:nth-child(7) > a", "css:finder"],
-        ["xpath=//ul[@id='agg_tabs']/li[7]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#internal_port')]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[7]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Internal Port (15)')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "4d7e3fba-b328-428b-b957-8feb5f8e64b4",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=#agg_internal_port_tbl tr:nth-child(1) > td:nth-child(4)",
-      "targets": [
-        ["css=#agg_internal_port_tbl tr:nth-child(1) > td:nth-child(4)", "css:finder"],
-        ["xpath=//table[@id='agg_internal_port_tbl']/tbody/tr/td[4]", "xpath:idRelative"],
-        ["xpath=//div[7]/div/div/div[2]/table/tbody/tr/td[4]", "xpath:position"]
-      ],
-      "value": "29.55 M"
-    }, {
-      "id": "2f06455f-df30-4400-80bd-2da78f901512",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=#internal_port h4",
-      "targets": [
-        ["css=#internal_port h4", "css:finder"],
-        ["xpath=//div[@id='internal_port']/div/div/div/h4", "xpath:idRelative"],
-        ["xpath=//div[7]/div/div/div/h4", "xpath:position"],
-        ["xpath=//h4[contains(.,'Aggregated by Internal Port (15)')]", "xpath:innerText"]
-      ],
-      "value": "Aggregated by Internal Port (15)"
-    }, {
-      "id": "80c8f510-57fc-4c23-85d8-d78603c5daa7",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=UDP",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
-    }, {
-      "id": "728e904c-f0b9-442b-beed-f5f18070f52c",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Protocol (2)",
-      "targets": [
-        ["linkText=Protocol (2)", "linkText"],
-        ["css=#agg_tabs > li:nth-child(8) > a", "css:finder"],
-        ["xpath=//ul[@id='agg_tabs']/li[8]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#protocol')]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[8]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Protocol (2)')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "f5ccfb06-537d-408c-9340-ec9e31545e97",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=#agg_protocol_tbl tr:nth-child(1) > td:nth-child(4)",
-      "targets": [
-        ["css=#agg_protocol_tbl tr:nth-child(1) > td:nth-child(4)", "css:finder"],
-        ["xpath=//table[@id='agg_protocol_tbl']/tbody/tr/td[4]", "xpath:idRelative"],
-        ["xpath=//div[8]/div/div/div[2]/table/tbody/tr/td[4]", "xpath:position"],
-        ["xpath=//td[contains(.,'51.11 M')]", "xpath:innerText"]
-      ],
-      "value": "51.11 M"
-    }, {
-      "id": "06d1ce79-485d-4dfd-b2ef-844184b36158",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=UDP",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
+      "value": "6446"
     }]
   }, {
     "id": "c14ae7b3-8f27-4a91-9c83-c4652dbe0e54",
@@ -11225,23 +11230,24 @@
       ],
       "value": "user"
     }, {
-      "id": "7d95f19f-0bef-4367-983f-576f65c1f671",
+      "id": "cd5ac70c-4172-4b84-9a2d-598104d57c18",
       "comment": "",
-      "command": "click",
-      "target": "name=commit",
+      "command": "sendKeys",
+      "target": "id=user_password",
       "targets": [
-        ["name=commit", "name"],
-        ["css=.btn", "css:finder"],
-        ["xpath=//input[@name='commit']", "xpath:attributes"],
-        ["xpath=//body[@id='loginpage']/div[3]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
-        ["xpath=//input[3]", "xpath:position"]
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[3]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
       ],
-      "value": ""
+      "value": "${KEY_ENTER}"
     }, {
       "id": "e4bd20e0-2ab3-4998-8881-fcbafe7ca4f6",
       "comment": "",
       "command": "click",
-      "target": "linkText=Show all",
+      "target": "xpath=//li[12]/a",
       "targets": [
         ["linkText=Show all", "linkText"],
         ["css=#sub_ul_1 > li:nth-child(12) > a", "css:finder"],
@@ -11253,19 +11259,26 @@
       ],
       "value": ""
     }, {
-      "id": "3ce5b683-e0f0-4f2c-bbe7-b4a844298399",
+      "id": "298ebabb-ca53-490f-8046-6625e0d8cb48",
       "comment": "",
       "command": "click",
-      "target": "linkText=Peering Analytics",
+      "target": "xpath=//div[24]/div/h4/a",
       "targets": [
         ["linkText=Peering Analytics", "linkText"],
-        ["css=.col-xs-3:nth-child(19) h4 > a", "css:finder"],
+        ["css=.col-xs-3:nth-child(24) h4 > a", "css:finder"],
         ["xpath=//a[contains(text(),'Peering Analytics')]", "xpath:link"],
-        ["xpath=//div[@id='sq_content']/div[3]/div[2]/div/div[19]/div/h4/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/newdash?dash_key=gitPeeringAnalytics83293')]", "xpath:href"],
-        ["xpath=//div[19]/div/h4/a", "xpath:position"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/div/div[24]/div/h4/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/newdash?dash_key=gitPeeringAnalytics98119')]", "xpath:href"],
+        ["xpath=//div[24]/div/h4/a", "xpath:position"],
         ["xpath=//a[contains(.,'Peering Analytics')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "488d77eb-0d93-4cde-a547-b658b26384d0",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
       "value": ""
     }, {
       "id": "3adafad8-0a08-4847-ad52-2a372057c9ec",
@@ -11443,7 +11456,7 @@
       "id": "92806bcb-f97a-4ea0-ad2e-c6c61b096579",
       "comment": "",
       "command": "pause",
-      "target": "5000",
+      "target": "8000",
       "targets": [],
       "value": ""
     }, {
@@ -11914,23 +11927,24 @@
       ],
       "value": "user"
     }, {
-      "id": "ea77e3f1-006d-48a1-a982-69c6f3800854",
+      "id": "6a4126a9-ecb6-4009-914a-2ec6d283e2f1",
       "comment": "",
-      "command": "click",
-      "target": "name=commit",
+      "command": "sendKeys",
+      "target": "id=user_password",
       "targets": [
-        ["name=commit", "name"],
-        ["css=.btn", "css:finder"],
-        ["xpath=//input[@name='commit']", "xpath:attributes"],
-        ["xpath=//body[@id='loginpage']/div[3]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
-        ["xpath=//input[3]", "xpath:position"]
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[3]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
       ],
-      "value": ""
+      "value": "${KEY_ENTER}"
     }, {
-      "id": "16fada7c-1eef-464e-8caa-d1382f2421e7",
+      "id": "de174d73-81fb-4991-808b-a522d9c6e40f",
       "comment": "",
       "command": "click",
-      "target": "linkText=Show all",
+      "target": "xpath=//li[12]/a",
       "targets": [
         ["linkText=Show all", "linkText"],
         ["css=#sub_ul_1 > li:nth-child(12) > a", "css:finder"],
@@ -11942,22 +11956,22 @@
       ],
       "value": ""
     }, {
-      "id": "75629523-2ce0-49f1-a3f0-c3f9892a25a4",
+      "id": "69903d0e-73aa-45a0-82f9-25dbe40e1ebf",
       "comment": "",
       "command": "click",
-      "target": "linkText=Peering Analytics",
+      "target": "xpath=//div[24]/div/h4/a",
       "targets": [
         ["linkText=Peering Analytics", "linkText"],
-        ["css=.col-xs-3:nth-child(19) h4 > a", "css:finder"],
+        ["css=.col-xs-3:nth-child(24) h4 > a", "css:finder"],
         ["xpath=//a[contains(text(),'Peering Analytics')]", "xpath:link"],
-        ["xpath=//div[@id='sq_content']/div[3]/div[2]/div/div[19]/div/h4/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/newdash?dash_key=gitPeeringAnalytics83293')]", "xpath:href"],
-        ["xpath=//div[19]/div/h4/a", "xpath:position"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/div/div[24]/div/h4/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/newdash?dash_key=gitPeeringAnalytics98119')]", "xpath:href"],
+        ["xpath=//div[24]/div/h4/a", "xpath:position"],
         ["xpath=//a[contains(.,'Peering Analytics')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "8f78eb78-6f8a-43fc-b5e7-23103b131d7a",
+      "id": "784a9785-b1ad-4bbb-bdbb-b81f3e49c223",
       "comment": "",
       "command": "click",
       "target": "xpath=//div[2]/div/div/div/select",
@@ -11966,12 +11980,12 @@
         ["name=routers", "name"],
         ["css=#routers", "css:finder"],
         ["xpath=//select[@id='routers']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_61334']/div/div/div/div[2]/form/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[@id='trp_data_3179']/div/div/div/div[2]/form/div[2]/div/div/div/select", "xpath:idRelative"],
         ["xpath=//div[2]/div/div/div/select", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "f5e6fef8-6418-4a69-915d-c0b6e30bf396",
+      "id": "bbf59867-76b4-46f2-a84a-260ec3cdc045",
       "comment": "",
       "command": "click",
       "target": "xpath=//div[2]/div/div/select",
@@ -11980,7 +11994,7 @@
         ["name=interfaces", "name"],
         ["css=#interfaces", "css:finder"],
         ["xpath=//select[@id='interfaces']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_61334']/div/div/div/div[2]/form/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[@id='trp_data_3179']/div/div/div/div[2]/form/div[2]/div[2]/div/div/select", "xpath:idRelative"],
         ["xpath=//div[2]/div/div/select", "xpath:position"]
       ],
       "value": ""
