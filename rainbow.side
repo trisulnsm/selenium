@@ -799,6 +799,13 @@
     "id": "49d5da2e-a92f-4bb5-91eb-5c81d35e4ff6",
     "name": "4. NRI - Aggregate flows Router one",
     "commands": [{
+      "id": "3381813c-7da6-4d57-a289-1b39eb531764",
+      "comment": "",
+      "command": "run",
+      "target": "8. User Login",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "36f92e26-94e8-481e-9310-3181219372b2",
       "comment": "",
       "command": "open",
@@ -11472,25 +11479,13 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "9e1cd869-ad05-41fb-9e07-c7c48addcc80",
+      "id": "d08c6500-53a6-4e32-8496-3b9511f829f5",
       "comment": "",
       "command": "verifyText",
       "target": "xpath=//div[5]/div/div/div/div[2]/div/table/tbody/tr/td",
       "targets": [
-        ["css=#agg_flows_tbl_19310 tr:nth-child(1) > td:nth-child(1)", "css:finder"],
-        ["xpath=//table[@id='agg_flows_tbl_19310']/tbody/tr/td", "xpath:idRelative"],
-        ["xpath=//div[5]/div/div/div/div[2]/div/table/tbody/tr/td", "xpath:position"],
-        ["xpath=//td[contains(.,'15169')]", "xpath:innerText"]
-      ],
-      "value": "15169"
-    }, {
-      "id": "3e046028-ab4a-490d-b431-108b63eda895",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//div[5]/div/div/div/div[2]/div/table/tbody/tr/td[1]",
-      "targets": [
-        ["css=#agg_flows_tbl_57831 tr:nth-child(1) > td:nth-child(1)", "css:finder"],
-        ["xpath=//table[@id='agg_flows_tbl_57831']/tbody/tr/td", "xpath:idRelative"],
+        ["css=#agg_flows_tbl_97564 tr:nth-child(1) > td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='agg_flows_tbl_97564']/tbody/tr/td", "xpath:idRelative"],
         ["xpath=//div[5]/div/div/div/div[2]/div/table/tbody/tr/td", "xpath:position"],
         ["xpath=//td[contains(.,'15169')]", "xpath:innerText"]
       ],
