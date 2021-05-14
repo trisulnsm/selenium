@@ -7704,10 +7704,17 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
+      "id": "e5d89e6e-77e0-42b6-a5f7-9dda3532e82e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show all",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "39d40d5e-1176-4004-a0bd-0b02c5f28a93",
       "comment": "",
       "command": "click",
-      "target": "xpath=//li[12]/a",
+      "target": "linkText=Peering Analytics",
       "targets": [
         ["linkText=Show all", "linkText"],
         ["css=#sub_ul_1 > li:nth-child(12) > a", "css:finder"],
@@ -7719,21 +7726,6 @@
       ],
       "value": ""
     }, {
-      "id": "395b23a5-6de0-4351-b829-f51503fc3f33",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//div[24]/div/h4/a",
-      "targets": [
-        ["linkText=Peering Analytics", "linkText"],
-        ["css=.col-xs-3:nth-child(24) h4 > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Peering Analytics')]", "xpath:link"],
-        ["xpath=//div[@id='sq_content']/div[3]/div[2]/div/div[24]/div/h4/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/newdash?dash_key=gitPeeringAnalytics98119')]", "xpath:href"],
-        ["xpath=//div[24]/div/h4/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Peering Analytics')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "50896d57-ecb5-4259-b855-0708a736e6db",
       "comment": "",
       "command": "pause",
@@ -7741,47 +7733,19 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "7a1c6aa7-0325-4b68-8e87-ac070a63b9ad",
+      "id": "54b5499d-4aca-4b1b-86c0-94e39e9755a5",
       "comment": "",
-      "command": "click",
-      "target": "xpath=//div[2]/div/div/div/select",
-      "targets": [
-        ["id=routers", "id"],
-        ["name=routers", "name"],
-        ["css=#routers", "css:finder"],
-        ["xpath=//select[@id='routers']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_16778']/div/div/div/div[2]/form/div[2]/div/div/div/select", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div/select", "xpath:position"]
-      ],
-      "value": ""
+      "command": "select",
+      "target": "id=routers",
+      "targets": [],
+      "value": "label=182.75.240.102"
     }, {
-      "id": "a1fd4945-93ff-4698-8b6a-1e7b2ac5a003",
+      "id": "a115770c-fa35-4368-9276-7f81c45ff725",
       "comment": "",
-      "command": "click",
-      "target": "xpath=//div[2]/div/div/div/select",
-      "targets": [
-        ["id=routers", "id"],
-        ["name=routers", "name"],
-        ["css=#routers", "css:finder"],
-        ["xpath=//select[@id='routers']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_16778']/div/div/div/div[2]/form/div[2]/div/div/div/select", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div/select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "84e218d2-b40c-47cb-9d30-cb89687bc525",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//div[2]/div/div/select",
-      "targets": [
-        ["id=interfaces", "id"],
-        ["name=interfaces", "name"],
-        ["css=#interfaces", "css:finder"],
-        ["xpath=//select[@id='interfaces']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_16778']/div/div/div/div[2]/form/div[2]/div[2]/div/div/select", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/select", "xpath:position"]
-      ],
-      "value": ""
+      "command": "select",
+      "target": "id=interfaces",
+      "targets": [],
+      "value": "label=182.75.240.102_567"
     }, {
       "id": "b8c88c82-083f-420b-8bae-5bef40b433ef",
       "comment": "",
@@ -8589,6 +8553,24 @@
         ["xpath=//div[2]/div/div/div/select", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "63b58ee2-e159-485d-a5ce-f7017a112bfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(3)",
+      "targets": [
+        ["css=.row:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='trp_data_25155']/div/div/div/div[2]/form/div[3]", "xpath:idRelative"],
+        ["xpath=//form/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49083181-8241-4679-ba8f-1bb1726c0fd1",
+      "comment": "",
+      "command": "select",
+      "target": "id=routers",
+      "targets": [],
+      "value": "label=182.75.240.102"
     }, {
       "id": "0ae693bd-24a5-43af-93cb-bef3670edf51",
       "comment": "",
@@ -10238,19 +10220,19 @@
       ],
       "value": ""
     }, {
-      "id": "f1687a94-6ef9-44c3-9100-30d587f44252",
+      "id": "426b9c9e-fc10-4613-9251-f0e8ee39bd21",
       "comment": "",
-      "command": "click",
-      "target": "xpath=//div[2]/div/div/div/select",
-      "targets": [
-        ["id=routers", "id"],
-        ["name=routers", "name"],
-        ["css=#routers", "css:finder"],
-        ["xpath=//select[@id='routers']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_4119']/div/div/div/div[2]/form/div[2]/div/div/div/select", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div/select", "xpath:position"]
-      ],
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
       "value": ""
+    }, {
+      "id": "f1fb0d84-80bf-4802-9c55-43737f188d68",
+      "comment": "",
+      "command": "select",
+      "target": "id=routers",
+      "targets": [],
+      "value": "label=182.75.240.102"
     }, {
       "id": "f66af9bb-5dfd-4b9f-b514-d72b3ccc0e1d",
       "comment": "",
