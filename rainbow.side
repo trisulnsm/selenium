@@ -2,7 +2,7 @@
   "id": "11d5376a-04d8-4e96-aeb0-19e44d01707e",
   "version": "2.0",
   "name": "trisul-testing",
-  "url": "http://10.0.3.22:3000/",
+  "url": "http://10.179.210.21:3000/",
   "tests": [{
     "id": "d36ff6e1-67ef-466c-bf0d-26e72800519e",
     "name": "8. User Login",
@@ -9427,7 +9427,7 @@
         ["xpath=//form[@id='fkeymatch']/div[2]/div/div/div/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "0~z"
+      "value": "8000~8100\\n9400~9500"
     }, {
       "id": "91f7f01b-d5c8-492f-88ad-6c5b9a12c858",
       "comment": "",
@@ -9445,21 +9445,28 @@
       "id": "93747b6f-cd77-4d0c-852c-41b37b80bd4b",
       "comment": "",
       "command": "pause",
-      "target": "15000",
+      "target": "2000",
       "targets": [],
       "value": ""
+    }, {
+      "id": "ab06fbe0-977c-42f8-8dab-6d15ee0eccd0",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=.progress",
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "c281a9c5-de6c-4e16-af21-baa55daa4332",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//td[3]",
+      "target": "xpath=//*[@id=\"in_keys_tbl\"]/tbody/tr[1]/td[3]",
       "targets": [
         ["css=tr:nth-child(1) > td:nth-child(3)", "css:finder"],
         ["xpath=//table[@id='in_keys_tbl']/tbody/tr/td[3]", "xpath:idRelative"],
         ["xpath=//td[3]", "xpath:position"],
         ["xpath=//td[contains(.,'11.65 GB')]", "xpath:innerText"]
       ],
-      "value": "11.65 GB"
+      "value": "30.30 GB"
     }, {
       "id": "d457a079-fe86-4549-874e-08e970728890",
       "comment": "",
@@ -9471,14 +9478,14 @@
       "id": "94b947e3-4dc2-4436-b96a-98a7c843ffc0",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//tr[2]/td[3]",
+      "target": "//*[@id=\"in_keys_tbl\"]/tbody/tr[2]/td[3]",
       "targets": [
         ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
         ["xpath=//table[@id='in_keys_tbl']/tbody/tr[2]/td[3]", "xpath:idRelative"],
         ["xpath=//tr[2]/td[3]", "xpath:position"],
         ["xpath=//td[contains(.,'6.66 GB')]", "xpath:innerText"]
       ],
-      "value": "6.66 GB"
+      "value": "20.59 GB"
     }, {
       "id": "4743bf10-8411-4a97-895e-a9d131d69ad3",
       "comment": "",
@@ -9500,6 +9507,29 @@
       "targets": [],
       "value": "label=Apps"
     }, {
+      "id": "a35b2846-fa4a-4339-a24b-7fe2506e167a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.report_range > span",
+      "targets": [
+        ["css=#reportrange_92172 > span", "css:finder"],
+        ["xpath=//div[@id='reportrange_92172']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2021-04-01 00:00:00 - 2021-04-01 00:51:00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1fd1faf-82c6-4fcc-bf5a-9e224cc6941c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ranges li:nth-child(4)",
+      "targets": [
+        ["css=.ranges li:nth-child(4)", "css:finder"],
+        ["xpath=//div[2]/div/ul/li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Last 2 Hours')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
       "id": "81ed4869-348e-4907-b56e-201f00d79e21",
       "comment": "",
       "command": "click",
@@ -9516,17 +9546,10 @@
     }, {
       "id": "8e6b60f4-2a6c-4f7c-9371-805451571c42",
       "comment": "",
-      "command": "click",
+      "command": "type",
       "target": "xpath=//textarea",
-      "targets": [
-        ["id=in_keys", "id"],
-        ["name=keys", "name"],
-        ["css=#in_keys", "css:finder"],
-        ["xpath=//textarea[@id='in_keys']", "xpath:attributes"],
-        ["xpath=//form[@id='fkeymatch']/div[2]/div/div/div/textarea", "xpath:idRelative"],
-        ["xpath=//textarea", "xpath:position"]
-      ],
-      "value": ""
+      "targets": [],
+      "value": "80~100\\n440~450"
     }, {
       "id": "8a03a9b4-378a-4b4a-b708-e075e542d2eb",
       "comment": "",
@@ -9544,33 +9567,40 @@
       "id": "795b04d0-6253-4b69-b90a-edc553533c5c",
       "comment": "",
       "command": "pause",
-      "target": "15000",
+      "target": "2000",
       "targets": [],
       "value": ""
+    }, {
+      "id": "80e07c5c-dad1-4ba0-a5b3-9e7c8733217c",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=.progress",
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "44543f67-ee20-4483-bea3-e4a7e1b8a6af",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//td[3]",
+      "target": "xpath=//*[@id=\"in_keys_tbl\"]/tbody/tr[1]/td[3]",
       "targets": [
         ["css=tr:nth-child(1) > td:nth-child(3)", "css:finder"],
         ["xpath=//table[@id='in_keys_tbl']/tbody/tr/td[3]", "xpath:idRelative"],
         ["xpath=//td[3]", "xpath:position"],
         ["xpath=//td[contains(.,'340.44 MB')]", "xpath:innerText"]
       ],
-      "value": "340.44 MB"
+      "value": "5.61 TB"
     }, {
       "id": "4408ba54-8c0d-4b4d-a32f-4785357eca11",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//tr[2]/td[3]",
+      "target": "xpath=//*[@id=\"in_keys_tbl\"]/tbody/tr[2]/td[3]",
       "targets": [
         ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
         ["xpath=//table[@id='in_keys_tbl']/tbody/tr[2]/td[3]", "xpath:idRelative"],
         ["xpath=//tr[2]/td[3]", "xpath:position"],
         ["xpath=//td[contains(.,'335.62 MB')]", "xpath:innerText"]
       ],
-      "value": "335.62 MB"
+      "value": "516.88 GB"
     }, {
       "id": "c0b3ba41-b5bf-4118-b295-70bcb8f86020",
       "comment": "",
@@ -9619,7 +9649,21 @@
         ["xpath=//form[@id='fkeymatch']/div[2]/div/div/div/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "A~G"
+      "value": "IN~IT\\nUS~US\\nSG~SG"
+    }, {
+      "id": "783495b3-65c9-4768-addc-8fc3d42fb1ed",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=inkeys_meter_id",
+      "targets": [
+        ["id=inkeys_meter_id", "id"],
+        ["name=meter[]", "name"],
+        ["css=#inkeys_meter_id", "css:finder"],
+        ["xpath=//select[@id='inkeys_meter_id']", "xpath:attributes"],
+        ["xpath=//form[@id='fkeymatch']/div/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": "label=Download Bytes"
     }, {
       "id": "fb4b6942-ffc0-4ff0-a6c6-237b23778449",
       "comment": "",
@@ -9637,57 +9681,59 @@
       "id": "2ad1136d-f52d-4a14-bd04-49829dac1439",
       "comment": "",
       "command": "pause",
-      "target": "15000",
+      "target": "2000",
       "targets": [],
       "value": ""
+    }, {
+      "id": "211fe2f1-6794-4f70-9a3d-28e4db4c07bf",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=.progress",
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "16a5a5c9-a54c-420c-8ae1-0464cbc520be",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//td[3]",
+      "target": "xpath=//*[@id=\"in_keys_tbl\"]/tbody/tr[1]/td[3]",
       "targets": [
         ["css=tr:nth-child(1) > td:nth-child(3)", "css:finder"],
         ["xpath=//table[@id='in_keys_tbl']/tbody/tr/td[3]", "xpath:idRelative"],
         ["xpath=//td[3]", "xpath:position"],
         ["xpath=//td[contains(.,'9.10 GB')]", "xpath:innerText"]
       ],
-      "value": "9.10 GB"
+      "value": "1.36 TB"
+    }, {
+      "id": "a11ec430-fd7a-4134-80f3-05fa93a5c591",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"in_keys_tbl\"]/tbody/tr[1]/td[4]",
+      "targets": [],
+      "value": "2.09 TB"
     }, {
       "id": "20bb90b3-c46c-4c11-9569-bf1f3514ccdd",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//td[2]",
+      "target": "xpath=//*[@id=\"in_keys_tbl\"]/tbody/tr[1]/td[2]",
       "targets": [
         ["css=tr:nth-child(1) > td:nth-child(2)", "css:finder"],
         ["xpath=//table[@id='in_keys_tbl']/tbody/tr/td[2]", "xpath:idRelative"],
         ["xpath=//td[2]", "xpath:position"],
         ["xpath=//td[contains(.,'France')]", "xpath:innerText"]
       ],
-      "value": "France"
-    }, {
-      "id": "66e2f394-ed89-41ef-ba34-26f7537d07fc",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//tr[2]/td[2]",
-      "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
-        ["xpath=//table[@id='in_keys_tbl']/tbody/tr[2]/td[2]", "xpath:idRelative"],
-        ["xpath=//tr[2]/td[2]", "xpath:position"],
-        ["xpath=//td[contains(.,'Germany')]", "xpath:innerText"]
-      ],
-      "value": "Germany"
+      "value": "India"
     }, {
       "id": "3325b289-6cc3-4e62-923a-1deb367d188d",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//tr[2]/td[3]",
+      "target": "xpath=//*[@id=\"in_keys_tbl\"]/tbody/tr[2]/td[3]",
       "targets": [
         ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
         ["xpath=//table[@id='in_keys_tbl']/tbody/tr[2]/td[3]", "xpath:idRelative"],
         ["xpath=//tr[2]/td[3]", "xpath:position"],
         ["xpath=//td[contains(.,'7.18 GB')]", "xpath:innerText"]
       ],
-      "value": "7.18 GB"
+      "value": "501.01 GB"
     }, {
       "id": "6f4e187f-0dab-499c-b329-fa72ad6cacd4",
       "comment": "",
@@ -9736,7 +9782,7 @@
         ["xpath=//form[@id='fkeymatch']/div[2]/div/div/div/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "103.0.0.0~103.100.100.100"
+      "value": "103.225.124.100~103.225.124.110"
     }, {
       "id": "c92710c5-193f-466f-958f-f03a87695846",
       "comment": "",
@@ -9751,58 +9797,42 @@
       ],
       "value": ""
     }, {
-      "id": "2744c3d0-631d-432b-be2c-33412fdc50bc",
+      "id": "9d91c5e3-b1d2-4b89-b945-27910a0e16cf",
       "comment": "",
       "command": "pause",
-      "target": "15000",
+      "target": "2000",
       "targets": [],
       "value": ""
+    }, {
+      "id": "30c8f1bd-c068-435c-91e2-aad8b2cff3b0",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=.progress",
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "69a0b2e3-74c7-4e48-92e8-482fb2edc426",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//td[2]",
+      "target": "xpath=//*[@id=\"in_keys_tbl\"]/tbody/tr[1]/td[2]",
       "targets": [
         ["css=tr:nth-child(1) > td:nth-child(2)", "css:finder"],
         ["xpath=//table[@id='in_keys_tbl']/tbody/tr/td[2]", "xpath:idRelative"],
         ["xpath=//td[2]", "xpath:position"]
       ],
-      "value": "103.5.133.27"
-    }, {
-      "id": "2765eda0-3326-46f3-8bb7-3ec13e8808aa",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//tr[2]/td[2]",
-      "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
-        ["xpath=//table[@id='in_keys_tbl']/tbody/tr[2]/td[2]", "xpath:idRelative"],
-        ["xpath=//tr[2]/td[2]", "xpath:position"]
-      ],
-      "value": "103.5.133.27"
+      "value": "103.225.124.101"
     }, {
       "id": "c455b372-be07-45f8-907b-b73c161e7ae0",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//td[3]",
+      "target": "xpath=//*[@id=\"in_keys_tbl\"]/tbody/tr[1]/td[3]",
       "targets": [
         ["css=tr:nth-child(1) > td:nth-child(3)", "css:finder"],
         ["xpath=//table[@id='in_keys_tbl']/tbody/tr/td[3]", "xpath:idRelative"],
         ["xpath=//td[3]", "xpath:position"],
         ["xpath=//td[contains(.,'223.06 MB')]", "xpath:innerText"]
       ],
-      "value": "191.55 MB"
-    }, {
-      "id": "01d8f244-cada-47c5-82bd-fc67076d6e8a",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//tr[2]/td[3]",
-      "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
-        ["xpath=//table[@id='in_keys_tbl']/tbody/tr[2]/td[3]", "xpath:idRelative"],
-        ["xpath=//tr[2]/td[3]", "xpath:position"],
-        ["xpath=//td[contains(.,'191.55 MB')]", "xpath:innerText"]
-      ],
-      "value": "191.55 MB"
+      "value": "317.91 GB"
     }]
   }, {
     "id": "9a915bc2-f1e4-4854-90d6-59b0299afc0b",
