@@ -11479,18 +11479,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "d08c6500-53a6-4e32-8496-3b9511f829f5",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//div[5]/div/div/div/div[2]/div/table/tbody/tr/td",
-      "targets": [
-        ["css=#agg_flows_tbl_97564 tr:nth-child(1) > td:nth-child(1)", "css:finder"],
-        ["xpath=//table[@id='agg_flows_tbl_97564']/tbody/tr/td", "xpath:idRelative"],
-        ["xpath=//div[5]/div/div/div/div[2]/div/table/tbody/tr/td", "xpath:position"],
-        ["xpath=//td[contains(.,'15169')]", "xpath:innerText"]
-      ],
-      "value": "15169"
-    }, {
       "id": "57d46e60-c3d9-4982-ae2b-f4d0226e5761",
       "comment": "",
       "command": "verifyText",
