@@ -11468,14 +11468,26 @@
       "id": "92806bcb-f97a-4ea0-ad2e-c6c61b096579",
       "comment": "",
       "command": "pause",
-      "target": "8000",
+      "target": "9000",
       "targets": [],
       "value": ""
+    }, {
+      "id": "9e1cd869-ad05-41fb-9e07-c7c48addcc80",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[5]/div/div/div/div[2]/div/table/tbody/tr/td",
+      "targets": [
+        ["css=#agg_flows_tbl_19310 tr:nth-child(1) > td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='agg_flows_tbl_19310']/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div[2]/div/table/tbody/tr/td", "xpath:position"],
+        ["xpath=//td[contains(.,'15169')]", "xpath:innerText"]
+      ],
+      "value": "15169"
     }, {
       "id": "3e046028-ab4a-490d-b431-108b63eda895",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//div[5]/div/div/div/div[2]/div/table/tbody/tr/td",
+      "target": "xpath=//div[5]/div/div/div/div[2]/div/table/tbody/tr/td[1]",
       "targets": [
         ["css=#agg_flows_tbl_57831 tr:nth-child(1) > td:nth-child(1)", "css:finder"],
         ["xpath=//table[@id='agg_flows_tbl_57831']/tbody/tr/td", "xpath:idRelative"],
@@ -11983,6 +11995,13 @@
       ],
       "value": ""
     }, {
+      "id": "a5c153b8-2899-4d1b-a5b7-1924abb9ac9f",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "23e4a947-228a-4b1b-9039-eb31190160f7",
       "comment": "",
       "command": "select",
@@ -12110,7 +12129,7 @@
       "id": "42780604-709c-415d-84c2-31c25dcbd00d",
       "comment": "",
       "command": "open",
-      "target": "/package/list_apps",
+      "target": "package/list_apps?nodownload=1",
       "targets": [],
       "value": ""
     }, {
