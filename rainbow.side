@@ -11274,7 +11274,7 @@
       "id": "298ebabb-ca53-490f-8046-6625e0d8cb48",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[24]/div/h4/a",
+      "target": "xpath=//a[contains(text(),'Peering Analytics')]",
       "targets": [
         ["linkText=Peering Analytics", "linkText"],
         ["css=.col-xs-3:nth-child(24) h4 > a", "css:finder"],
@@ -11968,50 +11968,36 @@
       ],
       "value": ""
     }, {
-      "id": "69903d0e-73aa-45a0-82f9-25dbe40e1ebf",
+      "id": "4ccc28fc-e8c7-4ee9-955f-765c1b8277c2",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[24]/div/h4/a",
+      "target": "linkText=Peering Analytics",
       "targets": [
         ["linkText=Peering Analytics", "linkText"],
-        ["css=.col-xs-3:nth-child(24) h4 > a", "css:finder"],
+        ["css=.col-xs-3:nth-child(25) h4 > a", "css:finder"],
         ["xpath=//a[contains(text(),'Peering Analytics')]", "xpath:link"],
-        ["xpath=//div[@id='sq_content']/div[3]/div[2]/div/div[24]/div/h4/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/newdash?dash_key=gitPeeringAnalytics98119')]", "xpath:href"],
-        ["xpath=//div[24]/div/h4/a", "xpath:position"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/div/div[25]/div/h4/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/newdash?dash_key=gitPeeringAnalytics43269')]", "xpath:href"],
+        ["xpath=//div[25]/div/h4/a", "xpath:position"],
         ["xpath=//a[contains(.,'Peering Analytics')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "784a9785-b1ad-4bbb-bdbb-b81f3e49c223",
+      "id": "23e4a947-228a-4b1b-9039-eb31190160f7",
       "comment": "",
-      "command": "click",
-      "target": "xpath=//div[2]/div/div/div/select",
-      "targets": [
-        ["id=routers", "id"],
-        ["name=routers", "name"],
-        ["css=#routers", "css:finder"],
-        ["xpath=//select[@id='routers']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_3179']/div/div/div/div[2]/form/div[2]/div/div/div/select", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div/select", "xpath:position"]
-      ],
-      "value": ""
+      "command": "select",
+      "target": "id=routers",
+      "targets": [],
+      "value": "label=182.75.240.102"
     }, {
-      "id": "bbf59867-76b4-46f2-a84a-260ec3cdc045",
+      "id": "d7ae2582-9ce4-4ae1-b809-b06af284dfa2",
       "comment": "",
-      "command": "click",
-      "target": "xpath=//div[2]/div/div/select",
-      "targets": [
-        ["id=interfaces", "id"],
-        ["name=interfaces", "name"],
-        ["css=#interfaces", "css:finder"],
-        ["xpath=//select[@id='interfaces']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_3179']/div/div/div/div[2]/form/div[2]/div[2]/div/div/select", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/select", "xpath:position"]
-      ],
-      "value": ""
+      "command": "select",
+      "target": "id=interfaces",
+      "targets": [],
+      "value": "label=182.75.240.102_567"
     }, {
-      "id": "2b5bc99b-589b-4108-ae63-f7fc0ac30485",
+      "id": "5a3c48b3-fcb2-437f-8bc6-4e03d84efb84",
       "comment": "",
       "command": "click",
       "target": "xpath=//input[3]",
@@ -12020,12 +12006,12 @@
         ["name=commit", "name"],
         ["css=#btn_submit", "css:finder"],
         ["xpath=//input[@id='btn_submit']", "xpath:attributes"],
-        ["xpath=//div[@id='trp_data_61334']/div/div/div/div[2]/form/div[3]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//div[@id='trp_data_73796']/div/div/div/div[2]/form/div[3]/div/input[3]", "xpath:idRelative"],
         ["xpath=//input[3]", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "b86af425-f4c8-48a9-b015-6bae3fc0b09b",
+      "id": "3bc5f6cb-e6f1-4805-91ef-a4b8d9d58ccb",
       "comment": "",
       "command": "click",
       "target": "xpath=//span/a/i",
@@ -12036,7 +12022,7 @@
       ],
       "value": ""
     }, {
-      "id": "8ac104a9-13c6-42b1-8d81-97ce3c47bf8f",
+      "id": "c26ec75e-9c48-44ea-9e6d-7de52ab53a07",
       "comment": "",
       "command": "click",
       "target": "xpath=//span/ul/li[8]/a",
@@ -12050,61 +12036,65 @@
       ],
       "value": "",
       "opensWindow": true,
-      "windowHandleName": "win5098",
+      "windowHandleName": "win8736",
       "windowTimeout": 2000
     }, {
-      "id": "42bf9c34-7ace-41b7-b7da-2fc89fd704d9",
+      "id": "0f56651d-05b9-4b96-8bd6-fbdd061bf63d",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90f48787-9e77-47a2-b1b1-bbcc015b2006",
       "comment": "",
       "command": "selectWindow",
-      "target": "handle=${win5098}",
+      "target": "handle=${win8736}",
       "targets": [],
       "value": ""
     }, {
-      "id": "0bf2fc16-6ad2-4b12-aa6b-54b6fab93ab6",
+      "id": "8cf501ad-69a6-4deb-a9fe-014a6215da9a",
       "comment": "",
-      "command": "verifyTitle",
-      "target": "Trisul Network Analytics",
-      "targets": [],
+      "command": "click",
+      "target": "xpath=//div[2]/table/tbody/tr/td[9]",
+      "targets": [
+        ["css=#explore_flows_tbl tr:nth-child(1) > td:nth-child(9)", "css:finder"],
+        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td[9]", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr/td[9]", "xpath:position"],
+        ["xpath=//td[contains(.,'152.24 M')]", "xpath:innerText"]
+      ],
       "value": ""
     }, {
-      "id": "0c759200-0e68-4fa2-9fac-d5f57e69d085",
+      "id": "a4a2b827-82c7-4dfb-90a7-ac500541e386",
       "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//td[8]",
+      "command": "click",
+      "target": "xpath=//div[2]/table/tbody/tr/td[9]",
       "targets": [
-        ["css=#table-top_host tr:nth-child(1) > td:nth-child(8)", "css:finder"],
-        ["xpath=//table[@id='table-top_host']/tbody/tr/td[8]", "xpath:idRelative"],
-        ["xpath=//td[8]", "xpath:position"],
-        ["xpath=//td[contains(.,'624.95 M')]", "xpath:innerText"]
+        ["css=#explore_flows_tbl tr:nth-child(1) > td:nth-child(9)", "css:finder"],
+        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td[9]", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr/td[9]", "xpath:position"],
+        ["xpath=//td[contains(.,'152.24 M')]", "xpath:innerText"]
       ],
-      "value": "624.95 M"
+      "value": ""
     }, {
-      "id": "dab63ba5-86bd-4ffd-8736-7d657221939b",
+      "id": "abc6a0fa-e22e-4b8d-8702-6a214ff106df",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//tr[2]/td[8]",
+      "target": "xpath=//div[2]/table/tbody/tr/td[9]",
       "targets": [
-        ["css=#table-top_host tr:nth-child(2) > td:nth-child(8)", "css:finder"],
-        ["xpath=//table[@id='table-top_host']/tbody/tr[2]/td[8]", "xpath:idRelative"],
-        ["xpath=//tr[2]/td[8]", "xpath:position"],
-        ["xpath=//td[contains(.,'453.22 M')]", "xpath:innerText"]
+        ["css=#explore_flows_tbl tr:nth-child(1) > td:nth-child(9)", "css:finder"],
+        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td[9]", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr/td[9]", "xpath:position"],
+        ["xpath=//td[contains(.,'152.24 M')]", "xpath:innerText"]
       ],
-      "value": "453.22 M"
+      "value": "152.24 M"
     }, {
-      "id": "03f70d17-c415-45f3-947f-d0fcadf1e4ce",
+      "id": "fd87b479-4ccd-46fe-b463-8c87f0c4a01d",
       "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//td/span/a",
-      "targets": [
-        ["linkText=TCP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'TCP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[14]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'TCP')]", "xpath:innerText"]
-      ],
-      "value": "TCP"
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "030cbbd8-8c72-4365-a8bc-c0b1969f72a1",
@@ -12331,6 +12321,13 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["27d87807-b514-47d7-907b-1fd945b9ee6e", "888c2855-b9e9-4055-8fba-156a49d74fc1", "c14ae7b3-8f27-4a91-9c83-c4652dbe0e54", "43c91529-2bbf-4b49-a638-89204d2df877", "36e97123-f9a6-4d2f-b619-bdb8681b9825", "d7e516d1-5dcc-44c9-b6d5-7b3b0f1edb48", "9a915bc2-f1e4-4854-90d6-59b0299afc0b", "9da1352e-e8fd-4d46-84d1-b43bf5eda713", "9be07371-a973-407c-94b4-ac9163b2d733", "80d646f1-db54-42bc-af26-eea26aa7353e"]
+  }, {
+    "id": "16bcd78c-e989-4ada-81f4-3effc75334f6",
+    "name": "peer",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c14ae7b3-8f27-4a91-9c83-c4652dbe0e54", "cf9bfcac-c811-4685-9d5a-524411839c8b", "98611777-46b3-41b8-ad9b-5ead30b396c7"]
   }],
   "urls": ["http://10.179.210.21:3000/", "http://10.0.3.21:3000/", "http://10.0.3.22:3000/", "http://10.0.3.23:3000/", "http://10.179.210.22:3000/", "http://10.0.3.146:3000/"],
   "plugins": []
