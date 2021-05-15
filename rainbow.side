@@ -7300,21 +7300,6 @@
       ],
       "value": "Port"
     }, {
-      "id": "a23afe49-871c-4a13-a5fb-05ee103043ed",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//td/span/a",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
-    }, {
       "id": "97cf246e-f91e-459f-8838-7647ff26a60e",
       "comment": "",
       "command": "click",
@@ -7386,21 +7371,6 @@
         ["xpath=//th[contains(.,'IP')]", "xpath:innerText"]
       ],
       "value": "IP"
-    }, {
-      "id": "13700ff0-923a-475b-af8c-4372de1d9850",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//td/span/a",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
     }, {
       "id": "e0f8a0c6-e0ac-4032-b1b4-0b2a8b45c1f2",
       "comment": "",
@@ -7474,21 +7444,6 @@
       ],
       "value": "IP"
     }, {
-      "id": "028b3071-447b-4f11-898b-52b6402e91f1",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//td/span/a",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
-    }, {
       "id": "5fdeb626-6339-42e6-b982-346cb75b3356",
       "comment": "",
       "command": "click",
@@ -7558,21 +7513,6 @@
         ["xpath=//th[contains(.,'Port')]", "xpath:innerText"]
       ],
       "value": "Port"
-    }, {
-      "id": "918682f9-2ee2-4a60-9bbd-eb159027e785",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//td/span/a",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
     }, {
       "id": "42b78550-f833-4efa-9bfe-a3d2a7af5501",
       "comment": "",
@@ -7646,21 +7586,6 @@
       ],
       "value": "Port"
     }, {
-      "id": "5fe7951a-e811-45bb-8569-dc4d409c5b0b",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//td/span/a",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
-    }, {
       "id": "ef4bd395-96b2-4d4b-a945-33b59df5360b",
       "comment": "",
       "command": "click",
@@ -7732,21 +7657,6 @@
       ],
       "value": "Port"
     }, {
-      "id": "f33c3784-b4db-40b7-9906-e9c912dff61c",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//td/span/a",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
-    }, {
       "id": "0772a202-28ff-4956-abc8-99f7dac41cbf",
       "comment": "",
       "command": "click",
@@ -7817,21 +7727,6 @@
         ["xpath=//th[contains(.,'Port')]", "xpath:innerText"]
       ],
       "value": "Port"
-    }, {
-      "id": "c72239f2-f2d2-44cf-9aa8-bf19ddd2a090",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//td/span/a",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
     }, {
       "id": "e17c6587-7226-48ea-a7b8-edf511234e0e",
       "comment": "",
@@ -7905,21 +7800,6 @@
         ["xpath=//th[contains(.,'Port')]", "xpath:innerText"]
       ],
       "value": "Port"
-    }, {
-      "id": "c79b8fc5-f321-4bcf-8163-4fd7bbd8cb1c",
-      "comment": "",
-      "command": "verifyText",
-      "target": "xpath=//td/span/a",
-      "targets": [
-        ["linkText=UDP", "linkText"],
-        ["css=tr:nth-child(1) > td:nth-child(1) > span:nth-child(1) > .flow_click", "css:finder"],
-        ["xpath=//a[contains(text(),'UDP')]", "xpath:link"],
-        ["xpath=//table[@id='explore_flows_tbl']/tbody/tr/td/span/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'javascript:;;')])[20]", "xpath:href"],
-        ["xpath=//td/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'UDP')]", "xpath:innerText"]
-      ],
-      "value": "UDP"
     }]
   }, {
     "id": "888c2855-b9e9-4055-8fba-156a49d74fc1",
