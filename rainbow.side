@@ -13519,6 +13519,20 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "33b2656c-dbc0-49d5-b39e-fb0d1a14c222",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e5cfb7c-2feb-42f8-803e-9958cc6909a7",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=.animated-background ",
+      "targets": [],
+      "value": "30000"
+    }, {
       "id": "c3ef7845-2f08-459f-a8f7-a3ac69d8762a",
       "comment": "",
       "command": "verifyText",
@@ -14099,6 +14113,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "8929d900-6384-46d2-9e69-4994bcd93b93",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2b1c88e-421b-489e-9c06-6c5e1fc6889b",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=.progress",
+      "targets": [
+        ["css=.progress", "css:finder"],
+        ["xpath=//div[@id='pg_bar_7188']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
       "id": "03cc414a-18ef-4485-a1e7-7a7c0dc58ca8",
       "comment": "",
       "command": "verifyText",
@@ -14359,17 +14391,23 @@
       ],
       "value": ""
     }, {
-      "id": "24d87109-7cf6-4195-83e6-81f95266ae2c",
+      "id": "029853fd-c2e9-4760-a29e-3120cfd574dd",
       "comment": "",
-      "command": "doubleClick",
-      "target": "css=.open img",
-      "targets": [
-        ["css=.open img", "css:finder"],
-        ["xpath=(//img[@title='Click for more options'])[28]", "xpath:img"],
-        ["xpath=//table[@id='top_198']/tbody/tr[8]/td/span[3]/a/img", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div/table/tbody/tr[8]/td/span[3]/a/img", "xpath:position"]
-      ],
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
       "value": ""
+    }, {
+      "id": "40883a91-3050-4023-8bfc-997ae97b1476",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=.progress",
+      "targets": [
+        ["css=.progress", "css:finder"],
+        ["xpath=//div[@id='pg_bar_7188']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div", "xpath:position"]
+      ],
+      "value": "30000"
     }, {
       "id": "a8bb459f-b346-4e55-806c-9a80a479fa63",
       "comment": "",
@@ -14420,6 +14458,20 @@
         ["xpath=//div[2]/div/div/div/table/tbody/tr[9]/td/span[3]/a/img", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "ee0d32b5-ea95-44d7-b0e4-1bbbba379024",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1dcb1c4-4fcc-4f7b-a100-412107b57fc0",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=.progress",
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "200e6d15-3cbe-40c7-8679-1606551952cb",
       "comment": "",
@@ -14883,6 +14935,24 @@
       "target": "handle=${win1688}",
       "targets": [],
       "value": ""
+    }, {
+      "id": "884fd112-bea2-4074-a040-479078d97a79",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33d159ae-fdf2-4da5-822d-e320b0075761",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=.progress",
+      "targets": [
+        ["css=.progress", "css:finder"],
+        ["xpath=//div[@id='pg_bar_7188']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div", "xpath:position"]
+      ],
+      "value": "30000"
     }, {
       "id": "6b64022e-3ac6-4fa8-b576-18cb1b42a1ee",
       "comment": "",
@@ -16034,6 +16104,13 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["c14ae7b3-8f27-4a91-9c83-c4652dbe0e54", "cf9bfcac-c811-4685-9d5a-524411839c8b", "98611777-46b3-41b8-ad9b-5ead30b396c7"]
+  }, {
+    "id": "2bfc306b-ebf6-4443-a3ac-278ac2a8706d",
+    "name": "Retro Counters",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["07b6d52b-a9ba-4ca7-87d3-b8fde42190ea", "b4e08662-f766-4bce-9c20-db729d43fc31", "107a25ba-bbb7-4621-9333-da9773baf78c", "59e685a8-5fd0-48a9-ae78-4ed6ab417435", "630e8d38-bb3f-47ff-8984-52ca442b1a88", "1fdf2cbb-ecf6-4f2a-a8ec-ec3c71aeeb05"]
   }],
   "urls": ["http://10.179.210.21:3000/", "http://10.0.3.21:3000/", "http://10.0.3.22:3000/", "http://10.0.3.23:3000/", "http://10.179.210.22:3000/", "http://10.0.3.146:3000/"],
   "plugins": []
