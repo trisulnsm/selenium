@@ -13096,6 +13096,106 @@
         ["xpath=//div[4]/div/div/div[2]/div/div/h4", "xpath:position"]
       ],
       "value": "Recv from Upstream AS"
+    }, {
+      "id": "2be78057-b9c5-43d3-9b7d-b9e94b107911",
+      "comment": "",
+      "command": "click",
+      "target": "id=filterexpr",
+      "targets": [
+        ["id=filterexpr", "id"],
+        ["name=filterexpr", "name"],
+        ["css=#filterexpr", "css:finder"],
+        ["xpath=//input[@id='filterexpr']", "xpath:attributes"],
+        ["xpath=//div[@id='retro_counters_scroll']/div[2]/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74b3f5fe-38d1-43a9-a145-e96753a84ca5",
+      "comment": "",
+      "command": "type",
+      "target": "id=filterexpr",
+      "targets": [
+        ["id=filterexpr", "id"],
+        ["name=filterexpr", "name"],
+        ["css=#filterexpr", "css:finder"],
+        ["xpath=//input[@id='filterexpr']", "xpath:attributes"],
+        ["xpath=//div[@id='retro_counters_scroll']/div[2]/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "9498"
+    }, {
+      "id": "e91b2d2d-3b7e-43a8-8b86-262795a3dd0a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Topper counts",
+      "targets": [
+        ["linkText=Topper counts", "linkText"],
+        ["css=.nav:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='retro_counters_scroll']/div[2]/div/div[2]/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#retro_counters')]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bdefa31-5f6d-4dde-b09d-438ea9f2d29f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a/small",
+      "targets": [
+        ["css=a > small", "css:finder"],
+        ["xpath=//ul[@id='recent_rcgs']/li[2]/a/small", "xpath:idRelative"],
+        ["xpath=//a/small", "xpath:position"],
+        ["xpath=//small[contains(.,'Flow-ASN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcd64bd9-21b1-4b61-90ae-b4d6b7b26719",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=#retro_counters_progress .fa-spinner",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "27497ace-d387-43f5-9c12-340bb72f2cff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Toggle Labels",
+      "targets": [
+        ["linkText=Toggle Labels", "linkText"],
+        ["css=#retro_counters #top-0-0 .btn", "css:finder"],
+        ["xpath=//a[@onclick='toggle_label_readable(event);']", "xpath:attributes"],
+        ["xpath=//div[@id='top-0-0']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[25]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d39d24a-a878-4e3a-88a4-c7d7c424e520",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=9498",
+      "targets": [
+        ["linkText=9498", "linkText"],
+        ["css=#top_778 span:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'9498')]", "xpath:link"],
+        ["xpath=//table[@id='top_778']/tbody/tr[2]/td/span[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/newdash?dash_key=key&guid=%7B120A3124-E2BB-47BD-6C64-71BBB861C428%7D&key=9498&statid=0')])[2]", "xpath:href"],
+        ["xpath=//td/span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'9498')]", "xpath:innerText"]
+      ],
+      "value": "9498"
+    }, {
+      "id": "5f2228d3-d8b5-4bdf-973c-088a19c6e801",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//tr[2]/td[2]",
+      "targets": [
+        ["css=#top_778 tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//table[@id='top_778']/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"]
+      ],
+      "value": "6%\\n869.88 GB"
     }]
   }],
   "suites": [{
