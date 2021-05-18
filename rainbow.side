@@ -17493,6 +17493,230 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "04a05ba2-c9b1-41e8-9b28-740bd6e26c23",
+    "name": "11. Long Term Traffic - Other",
+    "commands": [{
+      "id": "be7bd328-9dc4-4c8d-b292-6b073ae3c03e",
+      "comment": "",
+      "command": "run",
+      "target": "8. User Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8ef6c54-a539-478b-83e4-c3781a13af28",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.getElementById(\"sub_ul_3\").offsetParent === null ?  a=10  : document.getElementById('top_li_3').getElementsByTagName(\"a\")[0].click() ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd5a3c50-9bb8-4a1c-b056-8b4374cbe5f5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/ul/li[5]/a",
+      "targets": [
+        ["css=#top_li_3 > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Tools')])[2]", "xpath:link"],
+        ["xpath=//a[@onclick='treemenu_click(event,3);']", "xpath:attributes"],
+        ["xpath=//li[@id='top_li_3']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;;')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f545aa86-0c09-430a-8505-b6843b450af2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Long term traffic",
+      "targets": [
+        ["linkText=Long term traffic", "linkText"],
+        ["css=#sub_ul_3 > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Long term traffic')]", "xpath:link"],
+        ["xpath=//ul[@id='sub_ul_3']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/manage_keys/business_hour_chart?mid=304%2C3')]", "xpath:href"],
+        ["xpath=//li[5]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Long term traffic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2e40f7b-69fc-4178-b3a6-d59e153b3267",
+      "comment": "",
+      "command": "select",
+      "target": "id=cg_id",
+      "targets": [],
+      "value": "label=Flow-ASN"
+    }, {
+      "id": "f76f09e1-72fc-48f7-9dfc-9b90e43722c8",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=meter_id",
+      "targets": [
+        ["id=meter_id", "id"],
+        ["name=meter[]", "name"],
+        ["css=#meter_id", "css:finder"],
+        ["xpath=//select[@id='meter_id']", "xpath:attributes"],
+        ["xpath=//form[@id='bushr-chart']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": "label=Recv from Upstream AS"
+    }, {
+      "id": "19c65d7b-ce44-4b2c-ad9e-059e1c8ec606",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=meter_id",
+      "targets": [
+        ["id=meter_id", "id"],
+        ["name=meter[]", "name"],
+        ["css=#meter_id", "css:finder"],
+        ["xpath=//select[@id='meter_id']", "xpath:attributes"],
+        ["xpath=//form[@id='bushr-chart']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": "label=Transmit to Upstream AS"
+    }, {
+      "id": "4b0f3e8b-e8ed-410a-8c6f-e7ae06173cda",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=meter_id",
+      "targets": [
+        ["id=meter_id", "id"],
+        ["name=meter[]", "name"],
+        ["css=#meter_id", "css:finder"],
+        ["xpath=//select[@id='meter_id']", "xpath:attributes"],
+        ["xpath=//form[@id='bushr-chart']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": "label=Recv from Downstream AS"
+    }, {
+      "id": "0d0a6fee-1cf9-48fa-accb-df629d93773b",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=meter_id",
+      "targets": [
+        ["id=meter_id", "id"],
+        ["name=meter[]", "name"],
+        ["css=#meter_id", "css:finder"],
+        ["xpath=//select[@id='meter_id']", "xpath:attributes"],
+        ["xpath=//form[@id='bushr-chart']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": "label=Transmit to Downstream AS"
+    }, {
+      "id": "d688ec0d-798b-46f2-b650-3c9dc7701fd9",
+      "comment": "",
+      "command": "click",
+      "target": "id=key1",
+      "targets": [
+        ["id=key1", "id"],
+        ["name=key1", "name"],
+        ["css=#key1", "css:finder"],
+        ["xpath=//input[@id='key1']", "xpath:attributes"],
+        ["xpath=//form[@id='bushr-chart']/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02d9f565-8b7e-4a3c-9e00-07b77a5027c6",
+      "comment": "",
+      "command": "type",
+      "target": "id=key1",
+      "targets": [
+        ["id=key1", "id"],
+        ["name=key1", "name"],
+        ["css=#key1", "css:finder"],
+        ["xpath=//input[@id='key1']", "xpath:attributes"],
+        ["xpath=//form[@id='bushr-chart']/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "58898"
+    }, {
+      "id": "ff04838b-d003-489b-9d11-6372a5822f66",
+      "comment": "",
+      "command": "select",
+      "target": "id=surface",
+      "targets": [],
+      "value": "label=LINETABLE"
+    }, {
+      "id": "624f621f-2c7d-493e-a9a9-51ce40394148",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='bushr-chart']/div[2]/div/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f15a577e-33ff-4430-86cc-c8753c46b6a4",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=.animated-background",
+      "targets": [
+        ["css=.ltf_progress", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[3]/div/div/ul/li/span", "xpath:idRelative"],
+        ["xpath=//li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'7/7 100% Completed')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "1186541f-4b03-431e-9c47-33d2340c12ee",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ltf_chart1 > .widget > .widget-body > div > div:nth-child(2) > svg > .g-linetable > text:nth-child(4)",
+      "targets": [
+        ["css=#trp_chart_50891022 text:nth-child(4)", "css:finder"]
+      ],
+      "value": "12.06 G    6.77 G     11.29 G    6.77 G     4.01 T     0          "
+    }, {
+      "id": "a0f02c8e-b4a5-4d7f-8ad9-9e1146758cbb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ltf_chart1 > .widget > .widget-body > div > div:nth-child(2) > svg > .g-linetable > text:nth-child(10)",
+      "targets": [
+        ["css=#trp_chart_50891022 text:nth-child(10)", "css:finder"]
+      ],
+      "value": "2.69 G     1.53 G     2.42 G     1.53 G     878.37 G   0          "
+    }, {
+      "id": "6a2ec46d-cf4c-4801-9b25-7ace61e409bf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ltf_chart1 > .widget > .widget-body > div > div:nth-child(2) > svg > .g-linetable > text:nth-child(12)",
+      "targets": [
+        ["css=#trp_chart_50891022 text:nth-child(12)", "css:finder"]
+      ],
+      "value": "9.46 G     5.25 G     8.88 G     5.25 G     3.15 T     0          "
+    }, {
+      "id": "54d517ad-34fe-4c0b-81d5-c8ed19ca4934",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ltf_chart2 > .widget > .widget-body > div > div:nth-child(2) > svg > .g-linetable > text:nth-child(4)",
+      "targets": [
+        ["css=#trp_chart_53250933 text:nth-child(4)", "css:finder"]
+      ],
+      "value": "12.32 G    11.27 G    11.75 G    11.53 G    2.24 T     0          "
+    }, {
+      "id": "ea9096e3-9a54-4367-b052-10d0b4cd02a3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ltf_chart2 > .widget > .widget-body > div > div:nth-child(2) > svg > .g-linetable > text:nth-child(10)",
+      "targets": [
+        ["css=#trp_chart_53250933 text:nth-child(10)", "css:finder"]
+      ],
+      "value": "2.61 G     2.32 G     2.49 G     2.44 G     486.04 G   0          "
+    }, {
+      "id": "7f2a9d19-6fed-4819-bbeb-7c8dab0421cd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ltf_chart2 > .widget > .widget-body > div > div:nth-child(2) > svg > .g-linetable > text:nth-child(12)",
+      "targets": [
+        ["css=#trp_chart_53250933 text:nth-child(12)", "css:finder"]
+      ],
+      "value": "9.74 G     8.94 G     9.26 G     9.09 G     1.77 T     0          "
+    }]
   }],
   "suites": [{
     "id": "b6ebb6bc-5c1a-4f0d-b873-f25e61c209dc",
