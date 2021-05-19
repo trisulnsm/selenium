@@ -2553,7 +2553,7 @@
       ],
       "value": "3.15 TB"
     }]
-  },  {
+  }, {
     "id": "929592e3-147e-40b3-a562-5c78834e0421",
     "name": "2. Monthly Charts - Flow Prefix x Router",
     "commands": [{
@@ -12317,6 +12317,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "62c9ba9d-d58a-459a-ab7d-564fda6182a0",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "c3ee4be5-1054-43f7-aec8-00e1fda089b5",
       "comment": "",
       "command": "click",
@@ -12609,7 +12616,7 @@
       ],
       "value": ""
     }]
-  },{
+  }, {
     "id": "03ebb7e8-77c8-4c4e-9f60-c2649778810c",
     "name": "10. Key Usage Report - Flow ASN(9498)",
     "commands": [{
@@ -13949,7 +13956,7 @@
       ],
       "value": "9.74 G     8.94 G     9.26 G     9.09 G     1.77 T     0          "
     }]
-  },{
+  }, {
     "id": "b4e08662-f766-4bce-9c20-db729d43fc31",
     "name": "9. Retro Counter - Flow ASN",
     "commands": [{
@@ -20401,7 +20408,7 @@
     "persistSession": true,
     "parallel": false,
     "timeout": 300,
-    "tests": ["d61e6a85-c3c5-4dba-9d55-189d3c270cb6", "70af1ed7-436b-4c3f-9f65-be8d6d9b4104", "bff3bd2c-8477-4b72-88e3-c061443b7263", "292926dc-ee1b-44ae-8ad8-9e576c2f2295", "929592e3-147e-40b3-a562-5c78834e0421", "ce0c2d73-d484-4c4b-b209-5f31f0dd0ec3", "14403453-9b99-4ca9-9a67-fb8b364c3492", "141c0d76-5fed-4e59-8f19-9b112099246e"]
+    "tests": ["d61e6a85-c3c5-4dba-9d55-189d3c270cb6", "70af1ed7-436b-4c3f-9f65-be8d6d9b4104", "bff3bd2c-8477-4b72-88e3-c061443b7263", "929592e3-147e-40b3-a562-5c78834e0421", "ce0c2d73-d484-4c4b-b209-5f31f0dd0ec3", "14403453-9b99-4ca9-9a67-fb8b364c3492", "141c0d76-5fed-4e59-8f19-9b112099246e"]
   }, {
     "id": "d185f509-304f-4611-90bf-e5c49caa09c4",
     "name": "Explore Flows",
@@ -20429,7 +20436,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["c14ae7b3-8f27-4a91-9c83-c4652dbe0e54", "cf9bfcac-c811-4685-9d5a-524411839c8b", "98611777-46b3-41b8-ad9b-5ead30b396c7"]
+    "tests": ["cf9bfcac-c811-4685-9d5a-524411839c8b", "98611777-46b3-41b8-ad9b-5ead30b396c7"]
   }, {
     "id": "2bfc306b-ebf6-4443-a3ac-278ac2a8706d",
     "name": "Retro Counters",
