@@ -2,7 +2,7 @@
   "id": "11d5376a-04d8-4e96-aeb0-19e44d01707e",
   "version": "2.0",
   "name": "trisul-testing",
-  "url": "http://10.179.210.22:3000/",
+  "url": "http://10.179.210.21:3000/",
   "tests": [{
     "id": "d36ff6e1-67ef-466c-bf0d-26e72800519e",
     "name": "8. User Login",
@@ -12337,7 +12337,7 @@
         ["xpath=//h4/div/ul/li/a", "xpath:position"],
         ["xpath=//a[contains(.,'Load from Cache')]", "xpath:innerText"]
       ],
-      "value": ""
+      "value": "30000"
     }, {
       "id": "c3ee4be5-1054-43f7-aec8-00e1fda089b5",
       "comment": "",
