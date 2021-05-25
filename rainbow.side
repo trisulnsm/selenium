@@ -2,7 +2,7 @@
   "id": "11d5376a-04d8-4e96-aeb0-19e44d01707e",
   "version": "2.0",
   "name": "trisul-testing",
-  "url": "http://10.179.210.21:3000/",
+  "url": "http://10.179.210.22:3000/",
   "tests": [{
     "id": "d36ff6e1-67ef-466c-bf0d-26e72800519e",
     "name": "8. User Login",
@@ -12322,6 +12322,21 @@
       "command": "pause",
       "target": "2000",
       "targets": [],
+      "value": ""
+    }, {
+      "id": "1779df80-d7c8-4cbb-8cb9-11fefe04dba8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//h4/div/ul/li/a",
+      "targets": [
+        ["linkText=Load from Cache", "linkText"],
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//a[contains(text(),'Load from Cache')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[3]/div/h4/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/package/list_apps?nodownload=1')]", "xpath:href"],
+        ["xpath=//h4/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Load from Cache')]", "xpath:innerText"]
+      ],
       "value": ""
     }, {
       "id": "c3ee4be5-1054-43f7-aec8-00e1fda089b5",
