@@ -13497,7 +13497,7 @@
       "id": "f59cc5d6-86c6-4ea5-b6a0-b41c84ac79ab",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//dd",
+      "target": "xpath=//div[@id='top2-1-0']/div/div/dl/dd",
       "targets": [
         ["css=dd:nth-child(2)", "css:finder"],
         ["xpath=//div[@id='top2-1-0']/div/div/dl/dd", "xpath:idRelative"],
@@ -13574,7 +13574,7 @@
       "id": "f2c1261b-0466-41ec-84ee-4eacb4da7c16",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//dd",
+      "target": "xpath=//div[@id='top2-1-0']/div/div/dl/dd",
       "targets": [
         ["css=dd:nth-child(2)", "css:finder"],
         ["xpath=//div[@id='top2-1-0']/div/div/dl/dd", "xpath:idRelative"],
