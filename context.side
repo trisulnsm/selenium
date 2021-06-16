@@ -1,0 +1,2410 @@
+{
+  "id": "365eb18b-74b4-43db-a128-c3f71c63f933",
+  "version": "2.0",
+  "name": "context",
+  "url": "http://10.179.210.21:3000",
+  "tests": [{
+    "id": "d25c58c5-1cf5-4e13-b26a-eb54c211c5d6",
+    "name": "1. User Login",
+    "commands": [{
+      "id": "d571483d-20cd-4c69-8bd3-c99d8e26706d",
+      "comment": "",
+      "command": "open",
+      "target": "/trisul_web_user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59b415b9-a85b-4fd3-ad28-ef9afdd5d135",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "8aba1b8f-fee6-4089-862a-4cf3355836f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "b2a4b294-13d2-4952-8541-67d9eb8aebe8",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afa4ce0c-92db-4c33-b948-bf38f95776d2",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "382c2a16-98b0-4840-b9dc-0b1fe2e6d1d8",
+    "name": "1a. Context Test1 Login",
+    "commands": [{
+      "id": "eac95da9-22e2-4aee-99d1-5c09fefb7129",
+      "comment": "",
+      "command": "open",
+      "target": "/trisul_web_user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9aaac22c-58f5-4cf2-a889-f08933766102",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "74387bfe-710e-4a80-bd3c-e4c947172ed6",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "fa0f5880-3ee9-4cc8-8bff-d7ad7379bfe8",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test1"
+    }, {
+      "id": "fa9c5a34-00b7-48a8-8985-bd3dfef5b2d4",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c13f2ad3-d5b0-4499-b77b-317dced6b1e6",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bab476fe-6591-4045-a7bc-59dfe7a4911d",
+    "name": "1b. Context Test2 Login",
+    "commands": [{
+      "id": "c7026471-6b61-4546-8b71-2a5a61e728f6",
+      "comment": "",
+      "command": "open",
+      "target": "/trisul_web_user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3faf847-8e34-4e45-8551-3c124da21b68",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "75c95b36-357d-47a8-85ae-cfa9a41d4ab2",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "1e4988ca-50e8-4d7c-9293-671ef2893b83",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test2"
+    }, {
+      "id": "69f2a529-1900-4ff3-a867-ce236c42342c",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddbe1372-3062-406e-89ec-da104427c2a7",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "41efa1f3-b429-4087-97bc-c81e64250a53",
+    "name": "1d. Context Test1 Logout",
+    "commands": [{
+      "id": "adb1951e-d55f-4770-b028-3b6442ad9286",
+      "comment": "",
+      "command": "open",
+      "target": "/trisul_web_user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e61b2f0d-d345-4d06-9115-327b795b3746",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "2ba50b21-16c1-470d-9536-f9be69c3e304",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "04c43f03-24e3-4e10-94a3-480d0cd21e1b",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test1"
+    }, {
+      "id": "ddfd8175-599d-4032-958a-e41ebbcf500c",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edc215d2-bd85-4edf-8c9a-794670dda440",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df0ca215-b8a6-48e9-afe8-946fc97af3c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c224f05-f3c2-4f54-9a55-aae525da15a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "184277a7-d733-4fbf-897f-3c2a51ec3785",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[2]/div/div",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='loginpage']/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "×\\nLogged out"
+    }, {
+      "id": "477dd897-1daf-4287-b660-365a8ee80de2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a233edf1-04dc-4381-b31a-3bdc2a1eb63d",
+    "name": "1e. Context Test2 Logout",
+    "commands": [{
+      "id": "1f79f06f-c0c3-4679-9226-18ae489f9d20",
+      "comment": "",
+      "command": "open",
+      "target": "/trisul_web_user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40fe8712-5e7f-441b-9c19-7ac8d4261243",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "085766b7-acb1-42ff-8d0f-27ba11e25fe5",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "d18488e2-db60-4b54-8a5a-71dbf3cf5b42",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test2"
+    }, {
+      "id": "39b6f9b4-d20d-4e47-af68-05e3bda7fc88",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aacfe5b6-984f-4724-953d-9ed87244fa1c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3aa3605f-f6be-40df-8b8d-3be298c589b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a56423c-78d7-4e09-b912-fe0999fe5e01",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3339cd7a-256e-42f5-b1fb-a0c28760091a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[2]/div/div",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='loginpage']/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "×\\nLogged out"
+    }, {
+      "id": "fce3611f-2d05-4c26-a197-2ca2abcec458",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b8ee744e-8478-42e5-8f29-0c6e5f873eb5",
+    "name": "1c. User Logout",
+    "commands": [{
+      "id": "fd463b73-4e31-4c36-b981-10ddcca372fc",
+      "comment": "",
+      "command": "open",
+      "target": "/trisul_web_user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8266ecc4-501c-4185-801c-63afd2f67813",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "6d066fd3-dff4-4963-894c-d3ef7975e5dd",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "e7c4c81c-4e8b-4782-8926-6310688e4892",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61819b7e-80d7-480a-b3fc-f92a89c9059c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fc61dd1-c73d-4cf3-acd5-8901f65dcfc5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "723f71b0-402c-4430-84de-f40336304ab3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0b1da78-8715-49a9-9346-9a89f43458ae",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[2]/div/div",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='loginpage']/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "×\\nLogged out"
+    }, {
+      "id": "35acdd99-a73a-466e-b6e3-7d85dac1f31c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c232885e-1e75-4e65-8270-0b28c3e46dc5",
+    "name": "2. User Menu",
+    "commands": [{
+      "id": "2c3a0dae-f499-4ffb-b27a-9a2c182a73f9",
+      "comment": "",
+      "command": "open",
+      "target": "/trisul_web_user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c01e5b13-e265-4e76-bf19-e334a84f54b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "42867596-e528-4539-af5d-b57efaf28c13",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "561c7764-5d96-41b8-8c41-584b14daffeb",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b275799-331e-4308-8bb3-04754f9c64ea",
+      "comment": "",
+      "command": "open",
+      "target": "menu_manager/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aa69ecc-2ed2-42f6-89f8-158efe950bdb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Menu",
+      "targets": [
+        ["linkText=Create New Menu", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Menu')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/new_top_level_menu')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48e23267-59b1-4b6a-8608-123cd7f9bbd2",
+      "comment": "",
+      "command": "click",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeb5aa47-9a16-469d-8ba4-cdcd9bceaa68",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "User Parent Menu"
+    }, {
+      "id": "9b681cd3-e299-4a52-b796-d710a4a1489a",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f10cc14c-ec44-4d67-86d3-a013dfeaf57b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//table[19]/tbody/tr/td/h4",
+      "targets": [
+        ["css=.table:nth-child(19) h4", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[19]/tbody/tr/td/h4", "xpath:idRelative"],
+        ["xpath=//table[19]/tbody/tr/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'User Parent Menu')]", "xpath:innerText"]
+      ],
+      "value": "User Parent Menu"
+    }, {
+      "id": "dadb7550-e867-46dc-be23-ac872382875b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Menu",
+      "targets": [
+        ["linkText=Create New Menu", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Menu')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[4]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/new_top_level_menu')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c92c0f09-2b06-477a-bd91-905148bfdec0",
+      "comment": "",
+      "command": "click",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45ab53d8-d3a5-48b4-af06-a1feae719885",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "User Child Menu1"
+    }, {
+      "id": "704311f3-6024-453c-bdaa-b8923cb494f0",
+      "comment": "",
+      "command": "select",
+      "target": "id=webtrisul_menu_parent_id",
+      "targets": [],
+      "value": "label=User Parent Menu"
+    }, {
+      "id": "37da17f2-adac-4a1e-ba74-28d8584bcfb4",
+      "comment": "",
+      "command": "click",
+      "target": "id=webtrisul_menu_parent_id",
+      "targets": [
+        ["id=webtrisul_menu_parent_id", "id"],
+        ["name=webtrisul_menu[parent_id]", "name"],
+        ["css=#webtrisul_menu_parent_id", "css:finder"],
+        ["xpath=//select[@id='webtrisul_menu_parent_id']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'No parent\nDashboards\nRetro\nTools\nSecurity\nNetflow\nResources\nAlerts\nReports\nCustomize\nUser Parent Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21ef85a3-6652-48fa-829d-640113ff7413",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "384c2174-8af9-42ca-ac75-c45e612e5f77",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[contains(.,'User Child Menu1')]",
+      "targets": [
+        ["css=.table:nth-child(20) td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//table[20]/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'User Child Menu1')]", "xpath:innerText"]
+      ],
+      "value": "User Child Menu1"
+    }, {
+      "id": "4e63ec82-b5f8-42e4-b4a9-5a4f9f544797",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Menu",
+      "targets": [
+        ["linkText=Create New Menu", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Menu')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[4]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/new_top_level_menu')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d4773e4-f90e-46c7-a390-4b638bd39248",
+      "comment": "",
+      "command": "click",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed1dfceb-a4d7-48c9-b199-616b321573da",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "User Child Menu2"
+    }, {
+      "id": "2d74d2d4-ded5-4c54-afb9-db99fb78ba7d",
+      "comment": "",
+      "command": "select",
+      "target": "id=webtrisul_menu_parent_id",
+      "targets": [],
+      "value": "label=User Parent Menu"
+    }, {
+      "id": "9924ed41-75c8-4f2a-a764-a06bd866ccef",
+      "comment": "",
+      "command": "click",
+      "target": "id=webtrisul_menu_parent_id",
+      "targets": [
+        ["id=webtrisul_menu_parent_id", "id"],
+        ["name=webtrisul_menu[parent_id]", "name"],
+        ["css=#webtrisul_menu_parent_id", "css:finder"],
+        ["xpath=//select[@id='webtrisul_menu_parent_id']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'No parent\nDashboards\nRetro\nTools\nSecurity\nNetflow\nResources\nAlerts\nReports\nCustomize\nUser Parent Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3afff9a1-3e86-4a36-bd76-ec29610f65a4",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4266704-02c2-4e54-85f0-38d9c59b79d3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[contains(.,'User Child Menu2')]",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//table[20]/tbody/tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'User Child Menu2')]", "xpath:innerText"]
+      ],
+      "value": "User Child Menu2"
+    }, {
+      "id": "5eb89706-f3da-4535-8ec8-c5ef9da7e671",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//table[19]/tbody/tr/td[2]/ul/li[3]/a",
+      "targets": [
+        ["css=.table:nth-child(19) li:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Move Up')])[47]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[19]/tbody/tr/td[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/move_parent_up/10001')]", "xpath:href"],
+        ["xpath=//table[19]/tbody/tr/td[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c2ec50f-9b9f-4005-a758-98ae03b84434",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//h4[contains(.,'User Parent Menu')]",
+      "targets": [
+        ["css=.table:nth-child(17) h4", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[17]/tbody/tr/td/h4", "xpath:idRelative"],
+        ["xpath=//table[17]/tbody/tr/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'User Parent Menu')]", "xpath:innerText"]
+      ],
+      "value": "User Parent Menu"
+    }, {
+      "id": "2e55b8fe-799a-4ff2-9456-592f693598d8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[contains(.,'User Child Menu1')]",
+      "targets": [
+        ["css=.table:nth-child(18) tr:nth-child(1) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[18]/tbody/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//table[18]/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'User Child Menu1')]", "xpath:innerText"]
+      ],
+      "value": "User Child Menu1"
+    }, {
+      "id": "9918db65-62cd-4d8c-948e-9d736459c646",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[contains(.,'User Child Menu2')]",
+      "targets": [
+        ["css=.table:nth-child(18) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[18]/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//table[18]/tbody/tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'User Child Menu2')]", "xpath:innerText"]
+      ],
+      "value": "User Child Menu2"
+    }, {
+      "id": "cc935e6e-6a22-4967-bf4e-0b19edf20254",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//table[17]/tbody/tr/td[2]/ul/li[4]/a",
+      "targets": [
+        ["css=.table:nth-child(17) li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Move Down')])[47]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[17]/tbody/tr/td[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/move_parent_down/10001')]", "xpath:href"],
+        ["xpath=//table[17]/tbody/tr/td[2]/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7c2ff89-8760-48cf-bb23-faf0f3f2921d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//h4[contains(.,'User Parent Menu')]",
+      "targets": [
+        ["css=.table:nth-child(19) h4", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[19]/tbody/tr/td/h4", "xpath:idRelative"],
+        ["xpath=//table[19]/tbody/tr/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'User Parent Menu')]", "xpath:innerText"]
+      ],
+      "value": "User Parent Menu"
+    }, {
+      "id": "aabb4550-e608-46ee-a3a2-6067254f616a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//table[20]/tbody/tr/td[2]",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(1) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//table[20]/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'User Child Menu1')]", "xpath:innerText"]
+      ],
+      "value": "User Child Menu1"
+    }, {
+      "id": "ddf76170-4f1b-4015-af40-653103f800df",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//table[20]/tbody/tr[2]/td[2]",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//table[20]/tbody/tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'User Child Menu2')]", "xpath:innerText"]
+      ],
+      "value": "User Child Menu2"
+    }, {
+      "id": "36eff829-a563-45ae-bba2-8b7a5325c98d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//table[20]/tbody/tr/td[3]/ul/li[2]/a",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(1) li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[59]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr/td[3]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/edit/10002')]", "xpath:href"],
+        ["xpath=//table[20]/tbody/tr/td[3]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d30f0e04-1342-4629-b236-729aceb9b557",
+      "comment": "",
+      "command": "click",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebe173ad-54cc-4f80-894b-d351912849e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "User Child Menu1 Edited"
+    }, {
+      "id": "6990d967-a687-4321-bf7d-a3a1c16d4fb2",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e253f33-1772-4652-8432-dead32f6c0cb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[contains(.,'User Child Menu1 Edited')]",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(1) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//table[20]/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'User Child Menu1 Edited')]", "xpath:innerText"]
+      ],
+      "value": "User Child Menu1 Edited"
+    }, {
+      "id": "e9955747-3649-4c8e-8f36-ed6b16ed62f0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//table[20]/tbody/tr[2]/td[3]/ul/li[2]/a",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(2) li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[61]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr[2]/td[3]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/edit/10003')]", "xpath:href"],
+        ["xpath=//table[20]/tbody/tr[2]/td[3]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "199287b4-6cb6-4403-af9b-4c710cdd347d",
+      "comment": "",
+      "command": "click",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad4f0d7d-5ada-4b96-8326-1b5234a7afb3",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "User Child Menu2 Edited"
+    }, {
+      "id": "1d57b28c-ce78-4876-be84-9f066b465e50",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2048f06-19be-4a59-97c6-7f0af0daae62",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[contains(.,'User Child Menu2 Edited')]",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//table[20]/tbody/tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'User Child Menu2 Edited')]", "xpath:innerText"]
+      ],
+      "value": "User Child Menu2 Edited"
+    }, {
+      "id": "f673d859-3132-4f0c-8cb8-c897a24b59b3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e71ae756-0ccf-42bc-aa09-35b5c213a66b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout/10003')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0eb36c1e-78c2-424f-bbfd-a02b60ea468e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[2]/div/div",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='loginpage']/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "×\\nLogged out"
+    }, {
+      "id": "14f2d319-dacc-4afd-9375-1ed52b740c4d",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "7fc45cc0-0222-4813-ac3b-5bcd869c3395",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "4f5433ed-0b1b-4e04-bb22-5c6091f71e95",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test1"
+    }, {
+      "id": "608a7f14-4c8f-42df-b2a1-7e739e46a3fd",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "524de49e-c3f4-480b-b2fd-cb3032d72794",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b30753db-2af4-4c7c-91d5-2a0070cab355",
+      "comment": "",
+      "command": "open",
+      "target": "menu_manager/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91e0fc44-0446-422b-8ef2-27bb2fd71848",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//table[20]/tbody/tr/td[2]",
+      "targets": [],
+      "value": "User Child Menu1"
+    }, {
+      "id": "f200321a-1386-4a73-ae55-d544ae39e38a",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//table[20]/tbody/tr[2]/td[2]",
+      "targets": [],
+      "value": "User Child Menu2"
+    }, {
+      "id": "30fe647e-23d6-4b78-a885-950e8ee35b4a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8e02e5f-2355-4b82-8f41-3aea1810474a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b832cecb-2939-4121-b6e6-57952d0faf9b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[2]/div/div",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='loginpage']/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "×\\nLogged out"
+    }, {
+      "id": "7e05a89c-5605-491b-ab6f-800e28503b41",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "189ca63c-df41-4da9-be63-f9fdf3491597",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "2e546d28-f8bc-4f79-968b-87238e6aa879",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=default"
+    }, {
+      "id": "98d6c452-e698-4464-aa6b-d6100ca43b05",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55199de6-1ab0-43ac-81a3-e6b7404231fc",
+      "comment": "",
+      "command": "open",
+      "target": "menu_manager/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51d0c129-7e83-4552-ad4d-aaa0dd13035d",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef820e74-e87f-4a84-8577-6ec8cc82c5bb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//table[19]/tbody/tr/td[2]/ul/li[2]/a",
+      "targets": [
+        ["css=.table:nth-child(19) li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[57]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/table[19]/tbody/tr/td[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/delete_top_menu/10013')]", "xpath:href"],
+        ["xpath=//table[19]/tbody/tr/td[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c074f189-6097-4e42-86d9-a06bf7d581fe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "422ec7bc-cf79-4db7-bc9b-67b11a9aa46a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout/10013')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "210dbbcd-9367-4b18-bb32-3e18bfdbf5e8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[2]/div/div",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='loginpage']/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "×\\nLogged out"
+    }]
+  }, {
+    "id": "4e2e1f8b-d0cc-4c72-977a-b2ea2d2fd408",
+    "name": "2a. Context Test1 Menu",
+    "commands": [{
+      "id": "d0abefa3-d891-4398-aa45-fb9e7c022749",
+      "comment": "",
+      "command": "open",
+      "target": "/trisul_web_user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1475ffa-5061-4543-baf8-9c1cca2e9b6e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "3bdaaa9e-6833-422c-a71c-91bf9fa7da01",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "5d70e39e-50a2-4e05-b156-91ca9299eae6",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test1"
+    }, {
+      "id": "3a67fb80-c3d6-4d96-8518-8f4372ade2c7",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c59f8f2-0f75-4f49-90a0-4d5688e962ed",
+      "comment": "",
+      "command": "open",
+      "target": "menu_manager/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08ffe7b6-3c6f-4bb2-a11e-5f7a2d7b9919",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b9031fc-f17a-47e7-bb4a-d93bd2699043",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Menu",
+      "targets": [
+        ["linkText=Create New Menu", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Menu')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/new_top_level_menu')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc141ba5-5f49-44f2-b594-cf7182eae8fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Context Test1 Parent Menu"
+    }, {
+      "id": "725c8d87-0e77-4884-b2f7-1e46d298f5df",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b79e9c8-289b-4701-918d-90677b489797",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//table[19]/tbody/tr/td/h4",
+      "targets": [
+        ["css=.table:nth-child(19) h4", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[19]/tbody/tr/td/h4", "xpath:idRelative"],
+        ["xpath=//table[19]/tbody/tr/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Context Test1 Parent Menu')]", "xpath:innerText"]
+      ],
+      "value": "Context Test1 Parent Menu"
+    }, {
+      "id": "1b865f26-5676-497e-b724-fe41e8936df0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Menu",
+      "targets": [
+        ["linkText=Create New Menu", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Menu')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[4]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/new_top_level_menu')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d789046b-f798-4216-9a35-670185c08c23",
+      "comment": "",
+      "command": "click",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a28200ac-777a-4678-977d-b435da1f6abc",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Context Test1 Parent Menu"
+    }, {
+      "id": "f0799ee7-a5a1-4fb2-b6f0-22fea30ee277",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Context Test1 Child1 Menu"
+    }, {
+      "id": "179743db-da36-43a8-b013-4807f220c359",
+      "comment": "",
+      "command": "select",
+      "target": "id=webtrisul_menu_parent_id",
+      "targets": [],
+      "value": "label=Context Test1 Parent Menu"
+    }, {
+      "id": "e2792925-0b14-44bb-b719-c75c1dd7e9ef",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "181d8679-0885-4be9-882a-06bce249f799",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Menu",
+      "targets": [
+        ["linkText=Create New Menu", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Menu')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[4]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/new_top_level_menu')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e2131b2-827e-4ae7-acba-ba8b932ba1b4",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Context Test1 Child2 Menu"
+    }, {
+      "id": "0bba34e7-01d4-4210-8212-0e404843b5b1",
+      "comment": "",
+      "command": "select",
+      "target": "id=webtrisul_menu_parent_id",
+      "targets": [],
+      "value": "label=Context Test1 Parent Menu"
+    }, {
+      "id": "da72e613-403b-4c5b-bcf7-d46e069d6c37",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a18c45b-7975-4128-b7b7-8faba8c3b545",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//table[20]/tbody/tr/td[2]",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(1) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//table[20]/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Context Test1 Child1 Menu')]", "xpath:innerText"]
+      ],
+      "value": "Context Test1 Child1 Menu"
+    }, {
+      "id": "f276df46-d125-4774-a74c-0bc777ad532e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//table[20]/tbody/tr[2]/td[2]",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//table[20]/tbody/tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Context Test1 Child2 Menu')]", "xpath:innerText"]
+      ],
+      "value": "Context Test1 Child2 Menu"
+    }, {
+      "id": "95028f54-c089-4738-8f01-7334da7e38a2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5c2545a-a8a8-4b4e-9ac6-addf6aca28ab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6eef45b-93c1-43fc-a8fa-49f7f92bc6be",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "07577132-bbfe-4ef5-bf06-270fe64613d5",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "c04aac38-ca99-4e77-965b-d68f0b5cd4d7",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test2"
+    }, {
+      "id": "079e678f-4fa5-4897-a6a1-1e50bd82d83f",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6f1b69d-3b6f-403f-97c2-f50fb8b002f1",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71b48e2c-3807-4c50-8d5f-66ac446504c2",
+      "comment": "",
+      "command": "open",
+      "target": "menu_manager/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32d938bb-b23b-4e99-866b-c05136f8eda0",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//table[20]/tbody/tr/td[2]",
+      "targets": [],
+      "value": "Context Test1 Child1 Menu"
+    }, {
+      "id": "ef2f3cf3-5176-439f-b128-6f1808dc29c5",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//table[20]/tbody/tr[2]/td[2]",
+      "targets": [],
+      "value": "Context Test1 Child2 Menu"
+    }, {
+      "id": "cb21ca70-ce76-4f53-b925-4b45add040b8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9211e43-1eab-4aff-92d0-66968d369e45",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "144b7fd6-2418-4cc1-9eed-8b4ca081dd5d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[2]/div/div",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='loginpage']/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "×\\nLogged out"
+    }, {
+      "id": "01174671-ab59-48fa-814d-00d705fa2853",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "ca07b6c2-a16e-4051-8147-a09972714f1f",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "305db123-f320-4a72-9861-b27c855a7b9e",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test1"
+    }, {
+      "id": "16d67835-b42c-466c-943e-d4286865db5c",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9030ede-8c90-459c-a4c3-0c13aba3b678",
+      "comment": "",
+      "command": "open",
+      "target": "menu_manager/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68becb73-1b88-47ef-8887-fc62c1e18c87",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7aa008ae-fa8f-4fc6-80f1-ca80ecabc9b5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//table[19]/tbody/tr/td[2]/ul/li[2]/a",
+      "targets": [
+        ["css=.table:nth-child(19) li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[57]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/table[19]/tbody/tr/td[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/delete_top_menu/10052')]", "xpath:href"],
+        ["xpath=//table[19]/tbody/tr/td[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6518289-2125-4744-a389-210c7e728d97",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "143dfc4a-bf7b-4553-a050-7f0fee9ca0a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout/10052')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59db8ecf-fa5a-4980-85e9-82a86815d19f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[2]/div/div",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='loginpage']/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "×\\nLogged out"
+    }]
+  }, {
+    "id": "aba529a9-638c-4113-876e-935d711613b2",
+    "name": "2b. Context Test1 Menu",
+    "commands": [{
+      "id": "d849fba9-0f7e-4bb4-afe1-0cf4f20fb180",
+      "comment": "",
+      "command": "open",
+      "target": "/trisul_web_user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31c3b0f3-13e4-42e9-bab6-29bf851849c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "41cd9026-5fab-4397-a21c-3898e55786c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "cb2dd538-325d-4cf6-aac1-176cb52a6e4c",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test2"
+    }, {
+      "id": "3365d1f8-a3e0-445a-80dd-b7589eea6d34",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b8c9e5a-e51c-4a78-ac38-0df8cbc4f0c9",
+      "comment": "",
+      "command": "open",
+      "target": "menu_manager/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5531408c-fa51-4b26-bcfb-c8fa5b0b62a0",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51b2e7b5-a9ff-4d35-be80-06798a9b4a90",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Menu",
+      "targets": [
+        ["linkText=Create New Menu", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Menu')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/new_top_level_menu')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0e87616-530d-428e-b649-1160e9c4f895",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Context Test2 Parent Menu"
+    }, {
+      "id": "2a07cddc-ce5a-45b7-a34d-08ad14225112",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe732279-4af9-4be7-af26-81d1d9cc8568",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//table[19]/tbody/tr/td/h4",
+      "targets": [
+        ["css=.table:nth-child(19) h4", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[19]/tbody/tr/td/h4", "xpath:idRelative"],
+        ["xpath=//table[19]/tbody/tr/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Context Test1 Parent Menu')]", "xpath:innerText"]
+      ],
+      "value": "Context Test2 Parent Menu"
+    }, {
+      "id": "22762a6f-44fc-4800-9e8b-e4de3cc1dd33",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Menu",
+      "targets": [
+        ["linkText=Create New Menu", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Menu')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[4]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/new_top_level_menu')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "220dec52-4243-4a34-98cd-4a716c13af3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0779123f-b312-4c8c-9f99-a864a56c11d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Context Test2 Parent Menu"
+    }, {
+      "id": "fd7ca240-c4dc-49d4-807f-fdb31f73fb71",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Context Test2 Child1 Menu"
+    }, {
+      "id": "577a3a2b-0f55-4c5f-ada8-06b75f0ae3d7",
+      "comment": "",
+      "command": "select",
+      "target": "id=webtrisul_menu_parent_id",
+      "targets": [],
+      "value": "label=Context Test2 Parent Menu"
+    }, {
+      "id": "99f352f3-cbde-4d3f-be2f-da530b12c574",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18928981-9210-4d6a-967c-1ff0da182fa9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Menu",
+      "targets": [
+        ["linkText=Create New Menu", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Menu')]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[4]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/new_top_level_menu')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26278499-6614-4da7-8a92-5c44939769db",
+      "comment": "",
+      "command": "type",
+      "target": "id=webtrisul_menu_name",
+      "targets": [
+        ["id=webtrisul_menu_name", "id"],
+        ["name=webtrisul_menu[name]", "name"],
+        ["css=#webtrisul_menu_name", "css:finder"],
+        ["xpath=//input[@id='webtrisul_menu_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Context Test2 Child2 Menu"
+    }, {
+      "id": "7c1adcb4-1bfe-4842-b336-54bbfd8e5baf",
+      "comment": "",
+      "command": "select",
+      "target": "id=webtrisul_menu_parent_id",
+      "targets": [],
+      "value": "label=Context Test2 Parent Menu"
+    }, {
+      "id": "70fd5d48-4d6e-4c58-8e78-b25a7d772499",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/form/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "121d750c-ebf8-4a96-8913-156665aac081",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//table[20]/tbody/tr/td[2]",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(1) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//table[20]/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Context Test1 Child1 Menu')]", "xpath:innerText"]
+      ],
+      "value": "Context Test2 Child1 Menu"
+    }, {
+      "id": "ba3c83b4-4690-4ee5-a152-d930c486444c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//table[20]/tbody/tr[2]/td[2]",
+      "targets": [
+        ["css=.table:nth-child(20) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sq_content']/div[4]/div[2]/table[20]/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//table[20]/tbody/tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Context Test1 Child2 Menu')]", "xpath:innerText"]
+      ],
+      "value": "Context Test2 Child2 Menu"
+    }, {
+      "id": "e35b465e-6d2f-4395-85f1-001f95899407",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f26f264a-bd3e-42b1-b064-05ee2161d36b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2226a793-2081-406d-9a2c-222fd6a6e7ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "2338b74e-7601-400b-9d14-b7b72924ef10",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "31ff9d01-d5c9-4dc7-af45-aad9aa6a2960",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test1"
+    }, {
+      "id": "5ae5ddd3-00b0-4589-94e5-3c3e5c0fbccd",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acba0c32-c9bc-459f-88de-bb1a4990e2a9",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Trisul Network Analytics",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6792432-c91a-4c63-b6e3-5a73d83bfe56",
+      "comment": "",
+      "command": "open",
+      "target": "menu_manager/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1998124e-c84e-4168-98c9-3584ee30d0cd",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//table[20]/tbody/tr/td[2]",
+      "targets": [],
+      "value": "Context Test2 Child1 Menu"
+    }, {
+      "id": "9ede49df-04a4-4201-88be-4f7ebf152a3a",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//table[20]/tbody/tr[2]/td[2]",
+      "targets": [],
+      "value": "Context Test2 Child2 Menu"
+    }, {
+      "id": "c153ecf8-776b-4804-931b-34f97af16665",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3db58f35-102e-4bb9-af6d-278c79b4fe4a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce6ace9f-7a9b-4a2c-9bd4-5abb32b35f70",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[2]/div/div",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='loginpage']/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "×\\nLogged out"
+    }, {
+      "id": "7c9912d8-d593-4ddc-9dd3-d9fb58d3f13e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_username",
+      "targets": [
+        ["id=user_username", "id"],
+        ["name=user[username]", "name"],
+        ["css=#user_username", "css:finder"],
+        ["xpath=//input[@id='user_username']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "5d14f80d-2861-45ba-b2ce-3535aee9f084",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "b8371b18-558b-4e3c-af6f-9b2b13591163",
+      "comment": "",
+      "command": "select",
+      "target": "id=wt_context_id",
+      "targets": [],
+      "value": "label=test2"
+    }, {
+      "id": "a7f3968b-81d5-49be-9235-59cb299c82ec",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//body[@id='loginpage']/div[4]/div/div/div[2]/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c612ddf8-202b-47bd-ac29-421831e421c4",
+      "comment": "",
+      "command": "open",
+      "target": "menu_manager/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "224aa011-b3a3-4439-92d1-e4f3aea422b1",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6b4c35f-02a1-4031-82a7-f469fd2bc7f9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//table[19]/tbody/tr/td[2]/ul/li[2]/a",
+      "targets": [
+        ["css=.table:nth-child(19) li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[57]", "xpath:link"],
+        ["xpath=//div[@id='sq_content']/div[3]/div[2]/table[19]/tbody/tr/td[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu_manager/delete_top_menu/10052')]", "xpath:href"],
+        ["xpath=//table[19]/tbody/tr/td[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "963c28c3-0bb3-4515-9416-66e8709bf3cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=user",
+      "targets": [
+        ["linkText=user", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12c11ce7-d254-4b7d-bfd7-51e126b5f448",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/ul/li[3]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/trisul_web_user/logout/10052')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab4219a4-be9e-419f-901a-10ecb3f0d7ed",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[2]/div/div",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='loginpage']/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "×\\nLogged out"
+    }]
+  }],
+  "suites": [{
+    "id": "33d7995f-c997-4cbb-96fa-d53a33d94d2a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d25c58c5-1cf5-4e13-b26a-eb54c211c5d6"]
+  }],
+  "urls": ["http://10.179.210.21:3000/"],
+  "plugins": []
+}
